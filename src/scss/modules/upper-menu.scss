@@ -1,0 +1,128 @@
+.upper-menu {
+  display: flex;
+  align-items: center;
+  height: 88px;
+  list-style: none;
+
+  @media (min-width: 992px) {
+    height: auto;
+    box-shadow: none;
+    background-color: #f8f8f8;
+  }
+
+  &__burger {
+    background-image: url('../img/burger.png');
+    background-size: cover;
+  }
+
+  &__logo {
+    flex: 1 1 auto;
+  }
+
+  &__call {
+    background-image: url('../img/call.png');
+    background-size: cover;
+  }
+
+  &__chat {
+    background-image: url('../img/chat.png');
+    background-size: cover;
+  }
+
+  &__profile {
+    background-image: url('../img/profile.png');
+    background-size: cover;
+  }
+
+  &__divider {
+    width: 2px;
+    height: 32px;
+    background-image: url('../img/divider.png');
+    background-size: cover;
+  }
+
+  &__repair {
+    background-image: url('../img/repair.png');
+    background-size: cover;
+  }
+
+  &__check-status {
+    background-image: url('../img/check-status.png');
+    background-size: cover;
+  }
+
+  &__divider_hidden {
+    position: absolute;
+    top: -100%;
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  &__divider_visible {
+    @media (min-width: 768px) {
+      position: static;
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+
+  &__call_hidden {
+    position: absolute;
+    top: -100%;
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  &__call_visible {
+    @media (min-width: 768px) {
+      position: static;
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+
+  &__chat_hidden {
+    position: absolute;
+    top: -100%;
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  &__chat_visible {
+    @media (min-width: 768px) {
+      position: static;
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+
+  &__profile_hidden {
+    position: absolute;
+    top: -100%;
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  &__profile_visible {
+    @media (min-width: 768px) {
+      position: static;
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+
+  &_hidden {
+    position: absolute;
+    top: -100%;
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  &_visible {
+    @media (min-width: 992px) {
+      position: static;
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+}

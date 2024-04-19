@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- <title><%= htmlWebpackPlugin.options.title %></title> -->
+    <title>CPS</title>
+  </head>
+  <body class="page">
+    <div class="wrapper">
+      <header class="page__header header header_hidden">
+        <div class="header__upper-menu upper-menu">
+          <button class="upper-menu__burger btn" type="button"></button>
+          <div
+            class="upper-menu__divider upper-menu__divider_hidden upper-menu__divider_visible"
+          ></div>
+          <div class="upper-menu__logo">
+            <img
+              src="../img/Group.png"
+              alt="Логотип"
+              width="96.55"
+              height="50.81"
+            />
+          </div>
+          <button
+            class="upper-menu__call upper-menu__call_hidden upper-menu__call_visible btn"
+            type="button"
+          ></button>
+          <button
+            class="upper-menu__chat upper-menu__chat_hidden upper-menu__chat_visible btn"
+            type="button"
+          ></button>
+          <button
+            class="upper-menu__profile upper-menu__profile_hidden upper-menu__profile_visible btn"
+            type="button"
+          ></button>
+          <div class="upper-menu__divider"></div>
+          <button class="upper-menu__repair btn" type="button"></button>
+          <button class="upper-menu__check-status btn" type="button"></button>
+        </div>
+      </header>
+      <main class="body">
+        <div class="body__header">
+          <h1 class="body__title title">Услуги и сервисы</h1>
+          <div
+            class="body__upper-menu upper-menu upper-menu_hidden upper-menu_visible"
+          >
+            <label
+              >Оставить заявку
+              <button class="upper-menu__repair btn" type="button"></button>
+            </label>
+            <label
+              >Статус ремонта
+              <button
+                class="upper-menu__check-status btn"
+                type="button"
+              ></button>
+            </label>
+          </div>
+        </div>
+        <nav class="body__slide-menu slide-menu">
+          <div class="slide-menu__fadecopy"></div>
+          <ul class="slide-menu__service">
+            <li class="slide-menu__item">
+              <a class="slide-menu__link" href="#">Ремонтируемые устройства</a>
+            </li>
+            <li class="slide-menu__item">
+              <a class="slide-menu__link" href="#">Дополнительные услуги</a>
+            </li>
+            <li class="slide-menu__item">
+              <a class="slide-menu__link" href="#">Цены на услуги</a>
+            </li>
+            <li class="slide-menu__item">
+              <a class="slide-menu__link" href="#">Адреса сервисных центров</a>
+            </li>
+            <li class="slide-menu__item">
+              <a class="slide-menu__link" href="#">Специальные цены</a>
+            </li>
+            <li class="slide-menu__item">
+              <a class="slide-menu__link" href="#">Отзывы</a>
+            </li>
+          </ul>
+        </nav>
+        <article class="about">
+          <div class="about__item">
+            <input class="about__read-more" type="checkbox" id="post-1" />
+            <div class="about__excerpt">
+              <p class="about__text">
+                Мы являемся авторизованным сервисным центром по ремонту техники
+                Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с
+                официальной гарантией производителя.
+              </p>
+              <p class="about__text">
+                Мы успешно работаем с 1992 года и заслужили репутацию надежного
+                партнера, что подтверждает большое количество постоянных
+                клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям
+                и, в свою очередь, советуют нас родным и близким.
+              </p>
+            </div>
+            <label class="label" for="post-1">
+              <img
+                class="about__img"
+                src="./img/icon_1.png"
+                alt=""
+                width="7.41"
+                height="10.29"
+              />
+              <span>Читать далее</span>
+            </label>
+          </div>
+          <div class="about__image">
+            <img class="about__pic" src="./img/cps.png" alt="" />
+          </div>
+        </article>
+      </main>
+    </div>
+  </body>
+</html>
