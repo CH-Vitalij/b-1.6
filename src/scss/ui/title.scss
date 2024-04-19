@@ -1,9 +1,25 @@
 .title {
-  font-weight: bold;
-  font-size: $font-size_lg;
-  line-height: $line-height_lg;
-  white-space: nowrap;
-  border-left: 4px solid #41f6d7;
-  letter-spacing: -0.6px;
   text-align: left;
+
+  &_size_lg {
+    font-size: $font-size_lg;
+    line-height: $line-height_lg;
+  }
+
+  &_size_md {
+    font-size: $font-size_sm;
+    line-height: $line-height_md;
+  }
+
+  &_mode_primary {
+    font-weight: bold;
+    border-left: 4px solid #41f6d7;
+    letter-spacing: -0.6px;
+  }
+
+  &_mode_secondary {
+    font-weight: 400;
+    letter-spacing: -0.2px;
+    color: #7e7e82;
+  }
 }

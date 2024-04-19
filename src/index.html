@@ -7,16 +7,16 @@
       content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
     />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link
+    <!-- <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
+    /> -->
     <!-- <title><%= htmlWebpackPlugin.options.title %></title> -->
     <title>CPS</title>
   </head>
   <body class="page">
     <div class="wrapper">
-      <header class="page__header header header_hidden">
+      <header class="page__header header header_hidden header_mode_primary">
         <div class="header__upper-menu upper-menu">
           <button class="upper-menu__burger btn" type="button"></button>
           <div
@@ -49,7 +49,7 @@
       </header>
       <main class="body">
         <div class="body__header">
-          <h1 class="body__title title">Услуги и сервисы</h1>
+          <h1 class="body__title title title_size_lg title_mode_primary">Услуги и сервисы</h1>
           <div
             class="body__upper-menu upper-menu upper-menu_hidden upper-menu_visible"
           >
@@ -121,10 +121,10 @@
           </div>
         </article>
         <section class="brand">
-          <header class="brand__header header">
-            <h2 class="brand__title title">РЕМОНТ ТЕХНИКИ РАЗЛИЧНЫХ БРЕНДОВ</h2>
+          <header class="brand__header header header_mode_secondary">
+            <h2 class="brand__title title title_size_md title_mode_secondary">РЕМОНТ ТЕХНИКИ РАЗЛИЧНЫХ БРЕНДОВ</h2>
           </header>
-          <div class="brand__container swiper">
+          <div class="brand__container swiper swiper_mode_primary">
             <div class="brand__wrapper swiper-wrapper">
               <div class="brand__slide swiper-slide">
                 <div class="brand__item">
@@ -239,7 +239,7 @@
             <div class="swiper-pagination"></div>
           </div>
 
-          <!-- <div class="brand__collapse collapse">
+          <div class="brand__collapse collapse">
             <input type="checkbox" class="content__read-more" id="post-2" />
             <div class="collapse__row">
               <div class="collapse__item">
@@ -340,7 +340,7 @@
               />
               <span>Показать все</span>
             </label>
-          </div> -->
+          </div>
         </section>
       </main>
     </div>

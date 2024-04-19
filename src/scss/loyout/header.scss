@@ -1,7 +1,4 @@
 .header {
-  background-color: $color-default;
-  box-shadow: inset 0 -3px 0 -1px $color-shadow;
-
   &_hidden {
     @media (min-width: 992px) {
       position: absolute;
@@ -26,5 +23,15 @@
 
   &__upper-menu_hidden {
     display: none;
+  }
+
+  &_mode_primary {
+    background-color: $color-default;
+    box-shadow: inset 0 -3px 0 -1px $color-shadow;
+  }
+
+  &_mode_secondary {
+    box-shadow: inset 0 1px 0 0 #d9fff5;
+    background-image: linear-gradient(to right, #f8f8f8, #ffffff);
   }
 }

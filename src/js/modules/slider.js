@@ -1,7 +1,7 @@
 import Swiper from 'swiper'
 import { Pagination } from 'swiper/modules'
-// import 'swiper/css'
-// import 'swiper/css/pagination'
+import 'swiper/swiper.scss'
+import 'swiper/modules/pagination.scss'
 
 function slider() {
   return new Swiper('.brand__container', {

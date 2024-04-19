@@ -1,0 +1,62 @@
+.brand {
+  &__header {
+    margin-bottom: 16px;
+
+    @media (min-width: $tableWidth) {
+      margin-bottom: 24px;
+    }
+  }
+
+  &__title {
+    padding: 16px;
+
+    @media (min-width: $tableWidth) {
+      padding: 16px 24px;
+    }
+
+    @media (min-width: 992px) {
+      padding: 16px 32px;
+    }
+  }
+
+  &__wrapper {
+    padding-left: 16px;
+    margin-bottom: 30px;
+  }
+
+  &__item {
+    height: 72px;
+  }
+
+  &__link {
+    display: inline-block;
+    height: 72px;
+  }
+
+  &__image img {
+    max-width: 100%;
+  }
+
+  &__collapse {
+    padding: 0 24px;
+  }
+}
+
+// .brand__collapse {
+// }
+// .collapse {
+// }
+// .content__read-more {
+// }
+// .collapse__row {
+// }
+// .collapse__item {
+// }
+// .collapse__link {
+// }
+// .content__label {
+// }
+// .label {
+// }
+// .content__img {
+// }

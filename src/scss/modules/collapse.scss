@@ -1,0 +1,25 @@
+.collapse {
+  display: none;
+
+  @media (min-width: $tableWidth) {
+    display: block;
+  }
+
+  &__row {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    max-height: 160px;
+    overflow-y: hidden;
+  }
+
+  &__item {
+    margin-bottom: 16px;
+    height: 72px;
+  }
+
+  &__link {
+    display: inline-block;
+    height: 72px;
+  }
+}
