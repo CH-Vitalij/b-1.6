@@ -7,7 +7,7 @@ function label() {
   var a6 = document.querySelectorAll('.collapse__row')
   var a7 = [a5]
 
-  var foo = function (a1, a3, a4, a7) {
+  var toggleElementBehavior = function (a1, a3, a4, a7) {
     a1.addEventListener('change', function () {
       if (a1.checked) {
         a7.style.maxHeight = '100%'
@@ -45,7 +45,7 @@ function label() {
   })
 
   a1.forEach((element, i) => {
-    foo(element, a3[i], a4[i], a7[i])
+    toggleElementBehavior(element, a3[i], a4[i], a7[i])
   })
 }
 
