@@ -639,7 +639,6 @@ template {
   .collapse__link {
     display: block; }
     .collapse__link:hover .collapse__arrow {
-      transition-duration: 0.6s;
       transform: scale(1.2) rotate(360deg); }
     .collapse__link_mode_primary {
       height: 72px;
@@ -659,7 +658,8 @@ template {
     vertical-align: middle; }
   .collapse__arrow {
     position: absolute;
-    right: 16px; }
+    right: 16px;
+    transition-duration: 0.6s; }
     .collapse__arrow_mode_primary {
       top: 16px; }
     .collapse__arrow_mode_secondary {
