@@ -1,9 +1,13 @@
 .swiper {
-  height: 120px;
+  height: 100px;
 
   @media (min-width: 768px) {
     display: none !important;
   }
+}
+
+.swiper_mode_primary .swiper-pagination {
+  bottom: var(--swiper-pagination-bottom, 0px) !important;
 }
 
 .swiper_mode_primary .swiper-pagination-bullet {

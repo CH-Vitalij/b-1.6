@@ -13,13 +13,19 @@
     overflow-y: hidden;
 
     @media (min-width: 992px) {
-      column-gap: 32px;      
+      column-gap: 32px;
     }
   }
 
   &__item {
     margin-bottom: 16px;
     height: 72px;
+
+    img {
+      @media (min-width: 992px) {
+        width: 240px;
+      }
+    }
   }
 
   &__link {
