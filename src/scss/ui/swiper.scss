@@ -6,14 +6,14 @@
   }
 }
 
-.swiper-pagination-bullet-active {
-  background-color: #b5b6bc !important;
-}
-
 .swiper_mode_primary .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
   line-height: 20px;
   font-size: 14px;
-  background-color: #dddddd;
+  background-color: $color-bullet;
+}
+
+.swiper_mode_primary .swiper-pagination-bullet-active {
+  background-color: $color-bullet_active;
 }

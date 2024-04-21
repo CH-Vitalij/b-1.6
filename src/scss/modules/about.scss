@@ -28,15 +28,6 @@
     }
   }
 
-  &__read-more {
-    display: none;
-  }
-
-  &__read-more:checked ~ &__excerpt {
-    max-height: 100%;
-    overflow-y: visible;
-  }
-
   &__excerpt {
     margin: 0;
     margin-bottom: 16px;
@@ -56,10 +47,6 @@
     @media (min-width: $tableWidth) {
       line-height: $line-height_sm;
     }
-  }
-
-  &__img {
-    margin-right: 8px;
   }
 
   &__image {

@@ -4,7 +4,7 @@ import 'swiper/swiper.scss'
 import 'swiper/modules/pagination.scss'
 
 function slider() {
-  return new Swiper('.brand__container', {
+  return new Swiper('.swiper_mode_primary', {
     modules: [Pagination],
     //количество слайдов для показа
     slidesPerView: 1.25,

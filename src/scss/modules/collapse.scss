@@ -11,6 +11,10 @@
     column-gap: 24px;
     max-height: 160px;
     overflow-y: hidden;
+
+    @media (min-width: 992px) {
+      column-gap: 32px;      
+    }
   }
 
   &__item {
@@ -21,5 +25,9 @@
   &__link {
     display: inline-block;
     height: 72px;
+  }
+
+  &__label {
+    margin-top: 24px;
   }
 }
