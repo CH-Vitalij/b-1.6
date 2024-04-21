@@ -22,26 +22,47 @@
 
   &__wrapper {
     padding-left: 16px;
+    padding-bottom: 32px;
   }
 
   &__item {
-    height: 72px;
+    position: relative;
+    height: 160px;
+    border-radius: 6px;
+    background-color: #ffffff;
   }
 
   &__link {
-    display: inline-block;
-    height: 72px;
+    display: block;
+    height: 160px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    text-decoration: none;
+    color: #1b1c21;
+    padding-top: 16px;
+    padding-left: 16px;
+
+    &:hover {
+      .devices__arrow {
+        transition-duration: 0.6s;
+        transform: scale(1.2) rotate(360deg);
+      }
+    }
   }
 
-  &__image img {
-    max-width: 100%;
+  &__arrow {
+    position: absolute;
+    bottom: 16px;
+    right: 16px;
   }
 
   &__collapse {
     padding: 0 24px;
 
     @media (min-width: 992px) {
-      padding: 0 32px;      
+      padding: 0 32px;
     }
   }
 }

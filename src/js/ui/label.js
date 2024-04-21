@@ -4,8 +4,8 @@ function label() {
   var a3 = []
   var a4 = []
   var a5 = document.querySelector('.about__excerpt')
-  var a6 = document.querySelector('.collapse__row')
-  var a7 = [a5, a6]
+  var a6 = document.querySelectorAll('.collapse__row')
+  var a7 = [a5]
 
   var foo = function (a1, a3, a4, a7) {
     a1.addEventListener('change', function () {
@@ -38,6 +38,10 @@ function label() {
   a2.forEach((element) => {
     a3.push(element.querySelector('span'))
     a4.push(element.querySelector('.label__img'))
+  })
+
+  a6.forEach((element) => {
+    a7.push(element)
   })
 
   a1.forEach((element, i) => {
