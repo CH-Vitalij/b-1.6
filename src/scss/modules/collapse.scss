@@ -41,7 +41,6 @@
 
     &:hover {
       .collapse__arrow {
-        transition-duration: 0.6s;
         transform: scale(1.2) rotate(360deg);
       }
     }
@@ -72,6 +71,7 @@
   &__arrow {
     position: absolute;
     right: 16px;
+    transition-duration: 0.6s;
 
     &_mode_primary {
       top: 16px;
