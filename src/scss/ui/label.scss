@@ -1,5 +1,6 @@
 .label {
   display: inline-block;
+  z-index: 100;
   width: 132px;
   font-size: $font-size_sm;
   font-weight: 500;
@@ -11,5 +12,7 @@
 
   &__img {
     margin-right: 8px;
+    transition-duration: 1s;
+    transition-property: transform;
   }
 }

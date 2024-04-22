@@ -10,10 +10,8 @@ function label() {
   var toggleElementBehavior = function (a1, a3, a4, a7) {
     a1.addEventListener('change', function () {
       if (a1.checked) {
-        a7.style.maxHeight = '100%'
-        a7.style.overflowY = 'visible'
-        a4.src = './img/icon_2.png'
-        console.log(a3.textContent)
+        a7.style.maxHeight = '1000px'
+        a4.style.transform = 'rotate(180deg)'
 
         if (a3.textContent === 'Читать далее') {
           a3.textContent = 'Свернуть'
@@ -22,9 +20,7 @@ function label() {
         }
       } else {
         a7.style.maxHeight = ''
-        a7.style.overflowY = ''
-        a4.src = './img/icon_1.png'
-        console.log(a3.textContent)
+        a4.style.transform = ''
 
         if (a3.textContent === 'Свернуть') {
           a3.textContent = 'Читать далее'

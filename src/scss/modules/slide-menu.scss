@@ -47,6 +47,9 @@
     letter-spacing: -0.2px;
     border-radius: 6px;
     outline: none;
+    transition-duration: 0.6s;
+    transition-property: box-shadow, background-color;
+    transition-timing-function: ease;
 
     @media (min-width: 992px) {
       letter-spacing: 0.24px;
