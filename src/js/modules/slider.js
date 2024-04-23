@@ -7,10 +7,12 @@ function slider() {
   return new Swiper('.swiper_mode_primary', {
     modules: [Pagination],
     //количество слайдов для показа
-    slidesPerView: 1.25,
+    slidesPerView: 1.312,
     //отступ между слайдами
     spaceBetween: 16,
     // slidesPerGroup: 1,
+    loop: true,
+    // слайдер будет зациклен
 
     breakpoints: {
       375: {

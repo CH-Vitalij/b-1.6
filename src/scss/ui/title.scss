@@ -11,6 +11,11 @@
     line-height: $line-height_md;
   }
 
+  &_size_xs {
+    font-size: $font-size;
+    line-height: $line-height_xs;
+  }
+
   &_mode_primary {
     font-weight: bold;
     border-left: 4px solid $color-border_left;
@@ -20,6 +25,12 @@
   &_mode_secondary {
     font-weight: 400;
     letter-spacing: -0.2px;
-    color: #7e7e82;
+    color: $color-grey;
+  }
+
+  &_mode_ternary {
+    font-weight: 500;
+    letter-spacing: 0;
+    color: $color-grey;
   }
 }

@@ -36,7 +36,15 @@
   }
 
   &__title {
-    padding: 16px 0 0 16px;
+    padding: 16px;
     margin: 0;
+
+    @media (min-width: $tableWidth) {
+      padding: 16px 24px;
+    }
+
+    @media (min-width: 992px) {
+      padding: 16px 32px;
+    }
   }
 }
