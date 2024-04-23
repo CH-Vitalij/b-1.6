@@ -33,9 +33,9 @@
     margin-bottom: 16px;
     max-height: 90px;
     overflow-y: hidden;
-    transition-duration: 1s;
+    transition-duration: 2s;
     transition-property: max-height;
-    transition-timing-function: ease;
+    transition-timing-function: ease-in-out;
 
     @media (min-width: $tableWidth) {
       max-height: 160px;

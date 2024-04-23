@@ -10,8 +10,8 @@ function label() {
   var toggleElementBehavior = function (a1, a3, a4, a7) {
     a1.addEventListener('change', function () {
       if (a1.checked) {
-        a7.style.maxHeight = '1000px'
         a4.style.transform = 'rotate(180deg)'
+        a7.style.maxHeight = '1000px'
 
         if (a3.textContent === 'Читать далее') {
           a3.textContent = 'Свернуть'
@@ -19,8 +19,8 @@ function label() {
           a3.textContent = 'Скрыть'
         }
       } else {
-        a7.style.maxHeight = ''
         a4.style.transform = ''
+        a7.style.maxHeight = ''
 
         if (a3.textContent === 'Свернуть') {
           a3.textContent = 'Читать далее'

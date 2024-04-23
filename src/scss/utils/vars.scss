@@ -10,23 +10,28 @@ $pagination-base: #dddddd;
 $pagination-active: #b5b6bc;
 
 // Main color
+$color-text: #1b1c21;
 $color-page: #f8f8f8;
 $color-default: #ffffff;
 $color-grey: #7e7e82;
 
-//Shadow color
+// Shadow color
 $color-shadow: #d9fff5;
 
-//Pagination color 
+// Border color
+$color-border_left: #41f6d7;
+
+// Pagination color
 $color-bullet: #dddddd;
 $color-bullet_active: #b5b6bc;
 
-//font-size
+// font-size
 $font-size: 14px;
 $font-size_sm: 16px;
 $font-size_lg: 28px;
 
-//line-height
+// line-height
+$line-height_xs: 16px;
 $line-height: 18px;
 $line-height_sm: 20px;
 $line-height_md: 24px;

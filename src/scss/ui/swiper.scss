@@ -1,6 +1,8 @@
-.swiper {
+.swiper.swiper_mode_primary {
+  padding: 0 16px 32px 16px;
+
   @media (min-width: 768px) {
-    display: none !important;
+    display: none;
   }
 }
 

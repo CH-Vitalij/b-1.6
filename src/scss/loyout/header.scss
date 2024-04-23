@@ -31,7 +31,12 @@
   }
 
   &_mode_secondary {
-    box-shadow: inset 0 1px 0 0 #d9fff5;
-    background-image: linear-gradient(to right, #f8f8f8, #ffffff);
+    box-shadow: inset 0 1px 0 0 $color-shadow;
+    background-image: linear-gradient(to right, $color-page, $color-default);
+  }
+
+  &__title {
+    padding: 16px 0 0 16px;
+    margin: 0;
   }
 }
