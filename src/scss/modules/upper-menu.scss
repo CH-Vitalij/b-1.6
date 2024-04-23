@@ -11,6 +11,7 @@
   }
 
   &__burger {
+    padding: 0;
     background-image: url('../img/burger.png');
     background-size: cover;
   }
@@ -20,16 +21,19 @@
   }
 
   &__call {
+    padding: 0;
     background-image: url('../img/call.png');
     background-size: cover;
   }
 
   &__chat {
+    padding: 0;
     background-image: url('../img/chat.png');
     background-size: cover;
   }
 
   &__profile {
+    padding: 0;
     background-image: url('../img/profile.png');
     background-size: cover;
   }
@@ -42,11 +46,13 @@
   }
 
   &__repair {
+    padding: 0;
     background-image: url('../img/repair.png');
     background-size: cover;
   }
 
   &__check-status {
+    padding: 0;
     background-image: url('../img/check-status.png');
     background-size: cover;
   }

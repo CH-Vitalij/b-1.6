@@ -1,5 +1,10 @@
 .table {
-  border-spacing: 0 4px;
+  border-spacing: 0;
+  height: 200px;
+
+  &__row:last-child &__data {
+    padding-bottom: 0;
+  }
 
   &__header {
     padding: 0;

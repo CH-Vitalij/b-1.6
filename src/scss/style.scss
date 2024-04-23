@@ -5,14 +5,7 @@
 @import './utils/global.scss';
 
 @import './loyout/header.scss';
-
-@import './modules/upper-menu.scss';
-@import './modules/slide-menu.scss';
-@import './modules/about.scss';
-@import './modules/brand.scss';
-@import './modules/collapse.scss';
-@import './modules/devices.scss';
-@import './modules/prices.scss';
+@import './loyout/body.scss';
 
 @import './ui/btn.scss';
 @import './ui/title.scss';
@@ -21,4 +14,10 @@
 @import './ui/swiper.scss';
 @import './ui/table.scss';
 
-@import './body/body.scss';
+@import './modules/upper-menu.scss';
+@import './modules/slide-menu.scss';
+@import './modules/about.scss';
+@import './modules/brand.scss';
+@import './modules/collapse.scss';
+@import './modules/devices.scss';
+@import './modules/prices.scss';
