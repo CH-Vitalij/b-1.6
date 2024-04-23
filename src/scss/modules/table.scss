@@ -1,0 +1,76 @@
+.table {
+  display: flex;
+  flex-wrap: wrap;
+
+  &__row {
+    flex-basis: 100%;
+    background-color: $color-default;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  &__row:first-child {
+    border-top-right-radius: 6px;
+    border-top-left-radius: 6px;
+    background-color: $color-page;
+    
+    .table__list {
+      border: none;
+    }
+
+    .table__list {
+      padding: 0;
+    }
+  }
+
+  &__row:last-child {
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+
+    .table__list {
+      border: none;
+    }
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    padding-top: 23px;
+    padding-bottom: 23px;
+    border-bottom: 1px solid #eaeaea;
+    list-style: none;
+  }
+
+  &__item {
+    width: 16%;
+  }
+
+  &__item:first-child {
+    width: 50%;
+  }
+
+  &__btn {
+    width: 119px;
+    height: 32px;
+    background-color: $color-pink;
+    border-radius: 16px;
+    color: $color-default;
+    text-align: left;
+    padding: 4px 0 4px 12px;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 24px;
+    letter-spacing: -0.15px;
+  }
+
+  &__btn::after {
+    content: '';
+    position: absolute;
+    background-image: url('../img/arrow_2.svg');
+    width: 24px;
+    height: 24px;
+    transform: translate(10px, -1px);
+  }
+}
