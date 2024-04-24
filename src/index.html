@@ -10,717 +10,805 @@
     <title>CPS24</title>
   </head>
   <body class="page">
-    <div class="wrapper">
-      <header class="page__header header header_hidden header_mode_primary">
-        <div class="header__upper-menu upper-menu">
-          <button class="upper-menu__burger btn" type="button"></button>
-          <div
-            class="upper-menu__divider upper-menu__divider_hidden upper-menu__divider_visible"
-          ></div>
-          <div class="upper-menu__logo">
-            <img
-              src="./img/Group.png"
-              alt="Логотип"
-              width="96.55"
-              height="50.81"
-            />
+    <div class="container">
+      <div class="wrapper">
+        <header class="page__header header header_hidden header_mode_primary">
+          <div class="header__upper-menu upper-menu">
+            <button class="upper-menu__burger btn" type="button"></button>
+            <div
+              class="upper-menu__divider upper-menu__divider_hidden upper-menu__divider_visible"
+            ></div>
+            <div class="upper-menu__logo">
+              <img
+                src="./img/Group.png"
+                alt="Логотип"
+                width="96.55"
+                height="50.81"
+              />
+            </div>
+            <button
+              class="upper-menu__call upper-menu__call_hidden upper-menu__call_visible btn"
+              type="button"
+            ></button>
+            <button
+              class="upper-menu__chat upper-menu__chat_hidden upper-menu__chat_visible btn"
+              type="button"
+            ></button>
+            <button
+              class="upper-menu__profile upper-menu__profile_hidden upper-menu__profile_visible btn"
+              type="button"
+            ></button>
+            <div class="upper-menu__divider"></div>
+            <button class="upper-menu__repair btn" type="button"></button>
+            <button class="upper-menu__check-status btn" type="button"></button>
           </div>
-          <button
-            class="upper-menu__call upper-menu__call_hidden upper-menu__call_visible btn"
-            type="button"
-          ></button>
-          <button
-            class="upper-menu__chat upper-menu__chat_hidden upper-menu__chat_visible btn"
-            type="button"
-          ></button>
-          <button
-            class="upper-menu__profile upper-menu__profile_hidden upper-menu__profile_visible btn"
-            type="button"
-          ></button>
-          <div class="upper-menu__divider"></div>
-          <button class="upper-menu__repair btn" type="button"></button>
-          <button class="upper-menu__check-status btn" type="button"></button>
-        </div>
-      </header>
-      <main class="body">
-        <div class="body__header">
-          <h1 class="body__title title title_size_lg title_mode_primary"
-            >Услуги и сервисы</h1
+        </header>
+        <main class="body">
+          <div class="body__header">
+            <h1 class="body__title title title_size_lg title_mode_primary"
+              >Услуги и сервисы</h1
+            >
+            <div
+              class="body__upper-menu upper-menu upper-menu_hidden upper-menu_visible"
+            >
+              <label
+                >Оставить заявку
+                <button class="upper-menu__repair btn" type="button"></button>
+              </label>
+              <label
+                >Статус ремонта
+                <button
+                  class="upper-menu__check-status btn"
+                  type="button"
+                ></button>
+              </label>
+            </div>
+          </div>
+          <nav class="body__slide-menu slide-menu">
+            <div class="slide-menu__fadecopy"></div>
+            <ul class="slide-menu__service">
+              <li class="slide-menu__item">
+                <a class="slide-menu__link" href="#"
+                  >Ремонтируемые устройства</a
+                >
+              </li>
+              <li class="slide-menu__item">
+                <a class="slide-menu__link" href="#">Дополнительные услуги</a>
+              </li>
+              <li class="slide-menu__item">
+                <a class="slide-menu__link" href="#">Цены на услуги</a>
+              </li>
+              <li class="slide-menu__item">
+                <a class="slide-menu__link" href="#"
+                  >Адреса сервисных центров</a
+                >
+              </li>
+              <li class="slide-menu__item">
+                <a class="slide-menu__link" href="#">Специальные цены</a>
+              </li>
+              <li class="slide-menu__item">
+                <a class="slide-menu__link" href="#">Отзывы</a>
+              </li>
+            </ul>
+          </nav>
+          <article class="body__about about">
+            <div class="about__item">
+              <input class="read-more" type="checkbox" id="post-1" />
+              <div class="about__excerpt">
+                <p class="about__text">
+                  Мы являемся авторизованным сервисным центром по ремонту
+                  техники Dell. Только у нас вы можете отремонтировать свой
+                  ноутбук Dell с официальной гарантией производителя.
+                </p>
+                <p class="about__text">
+                  Мы успешно работаем с 1992 года и заслужили репутацию
+                  надежного партнера, что подтверждает большое количество
+                  постоянных клиентов. Мы гордимся тем, что к нам обращаются по
+                  рекомендациям и, в свою очередь, советуют нас родным и
+                  близким.
+                </p>
+              </div>
+              <label class="label" for="post-1">
+                <img
+                  class="label__img"
+                  src="./img/icon_1.png"
+                  alt=""
+                  width="7.41"
+                  height="10.29"
+                />
+                <span>Читать далее</span>
+              </label>
+            </div>
+            <div class="about__image">
+              <img class="about__pic" src="./img/cps.png" alt="" />
+            </div>
+          </article>
+          <section class="body__brand brand">
+            <header class="brand__header header header_mode_secondary">
+              <h2 class="header__title title title_size_md title_mode_secondary"
+                >РЕМОНТ ТЕХНИКИ РАЗЛИЧНЫХ БРЕНДОВ</h2
+              >
+            </header>
+            <div class="swiper swiper_mode_primary">
+              <div class="brand__wrapper swiper-wrapper">
+                <div class="brand__slide swiper-slide">
+                  <div class="brand__item">
+                    <a href="#" class="brand__link">
+                      <img
+                        class="brand__type"
+                        src="./img/lenovo_1.svg"
+                        alt=""
+                      />
+                      <img src="./img/arrow.svg" alt="" class="brand__arrow" />
+                    </a>
+                  </div>
+                </div>
+                <div class="brand__slide swiper-slide">
+                  <div class="brand__item">
+                    <a href="#" class="brand__link">
+                      <img
+                        class="brand__type"
+                        src="./img/samsung_1.svg"
+                        alt=""
+                      />
+                      <img src="./img/arrow.svg" alt="" class="brand__arrow" />
+                    </a>
+                  </div>
+                </div>
+                <div class="brand__slide swiper-slide">
+                  <div class="brand__item">
+                    <a href="#" class="brand__link">
+                      <img class="brand__type" src="./img/apple_1.svg" alt="" />
+                      <img src="./img/arrow.svg" alt="" class="brand__arrow" />
+                    </a>
+                  </div>
+                </div>
+                <div class="brand__slide swiper-slide">
+                  <div class="brand__item">
+                    <a href="#" class="brand__link">
+                      <img class="brand__type" src="./img/sonic.svg" alt="" />
+                      <img src="./img/arrow.svg" alt="" class="brand__arrow" />
+                    </a>
+                  </div>
+                </div>
+                <div class="brand__slide swiper-slide">
+                  <div class="brand__item">
+                    <a href="#" class="brand__link">
+                      <img class="brand__type" src="./img/bosch.svg" alt="" />
+                      <img src="./img/arrow.svg" alt="" class="brand__arrow" />
+                    </a>
+                  </div>
+                </div>
+                <div class="brand__slide swiper-slide">
+                  <div class="brand__item">
+                    <a href="#" class="brand__link">
+                      <img class="brand__type" src="./img/hp.svg" alt="" />
+                      <img src="./img/arrow.svg" alt="" class="brand__arrow" />
+                    </a>
+                  </div>
+                </div>
+                <div class="brand__slide swiper-slide">
+                  <div class="brand__item">
+                    <a href="#" class="brand__link">
+                      <img class="brand__type" src="./img/acer.svg" alt="" />
+                      <img src="./img/arrow.svg" alt="" class="brand__arrow" />
+                    </a>
+                  </div>
+                </div>
+                <div class="brand__slide swiper-slide">
+                  <div class="brand__item">
+                    <a href="#" class="brand__link">
+                      <img class="brand__type" src="./img/sony.svg" alt="" />
+                      <img src="./img/arrow.svg" alt="" class="brand__arrow" />
+                    </a>
+                  </div>
+                </div>
+                <div class="brand__slide swiper-slide">
+                  <div class="brand__item">
+                    <a href="#" class="brand__link">
+                      <img
+                        class="brand__type"
+                        src="./img/lenovo_2.svg"
+                        alt=""
+                      />
+                      <img src="./img/arrow.svg" alt="" class="brand__arrow" />
+                    </a>
+                  </div>
+                </div>
+                <div class="brand__slide swiper-slide">
+                  <div class="brand__item">
+                    <a href="#" class="brand__link">
+                      <img
+                        class="brand__type"
+                        src="./img/samsung_2.svg"
+                        alt=""
+                      />
+                      <img src="./img/arrow.svg" alt="" class="brand__arrow" />
+                    </a>
+                  </div>
+                </div>
+                <div class="brand__slide swiper-slide">
+                  <div class="brand__item">
+                    <a href="#" class="brand__link">
+                      <img class="brand__type" src="./img/apple_2.svg" alt="" />
+                      <img src="./img/arrow.svg" alt="" class="brand__arrow" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+            <div class="brand__collapse collapse">
+              <input type="checkbox" class="read-more" id="post-2" />
+              <div class="collapse__row">
+                <div class="collapse__item collapse__item_mode_primary">
+                  <a
+                    href="#"
+                    class="collapse__link collapse__link_mode_primary"
+                  >
+                    <img
+                      class="collapse__type"
+                      src="./img/lenovo_1.svg"
+                      alt=""
+                    />
+                    <img
+                      src="./img/arrow.svg"
+                      alt=""
+                      class="collapse__arrow collapse__arrow_mode_primary"
+                    />
+                  </a>
+                </div>
+                <div class="collapse__item collapse__item_mode_primary">
+                  <a
+                    href="#"
+                    class="collapse__link collapse__link_mode_primary"
+                  >
+                    <img
+                      class="collapse__type"
+                      src="./img/samsung_1.svg"
+                      alt=""
+                    />
+                    <img
+                      src="./img/arrow.svg"
+                      alt=""
+                      class="collapse__arrow collapse__arrow_mode_primary"
+                    />
+                  </a>
+                </div>
+                <div class="collapse__item collapse__item_mode_primary">
+                  <a
+                    href="#"
+                    class="collapse__link collapse__link_mode_primary"
+                  >
+                    <img
+                      class="collapse__type"
+                      src="./img/apple_1.svg"
+                      alt=""
+                    />
+                    <img
+                      src="./img/arrow.svg"
+                      alt=""
+                      class="collapse__arrow collapse__arrow_mode_primary"
+                    />
+                  </a>
+                </div>
+                <div class="collapse__item collapse__item_mode_primary">
+                  <a
+                    href="#"
+                    class="collapse__link collapse__link_mode_primary"
+                  >
+                    <img class="collapse__type" src="./img/sonic.svg" alt="" />
+                    <img
+                      src="./img/arrow.svg"
+                      alt=""
+                      class="collapse__arrow collapse__arrow_mode_primary"
+                    />
+                  </a>
+                </div>
+                <div class="collapse__item collapse__item_mode_primary">
+                  <a
+                    href="#"
+                    class="collapse__link collapse__link_mode_primary"
+                  >
+                    <img class="collapse__type" src="./img/bosch.svg" alt="" />
+                    <img
+                      src="./img/arrow.svg"
+                      alt=""
+                      class="collapse__arrow collapse__arrow_mode_primary"
+                    />
+                  </a>
+                </div>
+                <div class="collapse__item collapse__item_mode_primary">
+                  <a
+                    href="#"
+                    class="collapse__link collapse__link_mode_primary"
+                  >
+                    <img class="collapse__type" src="./img/hp.svg" alt="" />
+                    <img
+                      src="./img/arrow.svg"
+                      alt=""
+                      class="collapse__arrow collapse__arrow_mode_primary"
+                    />
+                  </a>
+                </div>
+                <div class="collapse__item collapse__item_mode_primary">
+                  <a
+                    href="#"
+                    class="collapse__link collapse__link_mode_primary"
+                  >
+                    <img class="collapse__type" src="./img/acer.svg" alt="" />
+                    <img
+                      src="./img/arrow.svg"
+                      alt=""
+                      class="collapse__arrow collapse__arrow_mode_primary"
+                    />
+                  </a>
+                </div>
+                <div class="collapse__item collapse__item_mode_primary">
+                  <a
+                    href="#"
+                    class="collapse__link collapse__link_mode_primary"
+                  >
+                    <img class="collapse__type" src="./img/sony.svg" alt="" />
+                    <img
+                      src="./img/arrow.svg"
+                      alt=""
+                      class="collapse__arrow collapse__arrow_mode_primary"
+                    />
+                  </a>
+                </div>
+                <div class="collapse__item collapse__item_mode_primary">
+                  <a
+                    href="#"
+                    class="collapse__link collapse__link_mode_primary"
+                  >
+                    <img
+                      class="collapse__type"
+                      src="./img/lenovo_2.svg"
+                      alt=""
+                    />
+                    <img
+                      src="./img/arrow.svg"
+                      alt=""
+                      class="collapse__arrow collapse__arrow_mode_primary"
+                    />
+                  </a>
+                </div>
+                <div class="collapse__item collapse__item_mode_primary">
+                  <a
+                    href="#"
+                    class="collapse__link collapse__link_mode_primary"
+                  >
+                    <img
+                      class="collapse__type"
+                      src="./img/samsung_2.svg"
+                      alt=""
+                    />
+                    <img
+                      src="./img/arrow.svg"
+                      alt=""
+                      class="collapse__arrow collapse__arrow_mode_primary"
+                    />
+                  </a>
+                </div>
+                <div class="collapse__item collapse__item_mode_primary">
+                  <a
+                    href="#"
+                    class="collapse__link collapse__link_mode_primary"
+                  >
+                    <img
+                      class="collapse__type"
+                      src="./img/apple_2.svg"
+                      alt=""
+                    />
+                    <img
+                      src="./img/arrow.svg"
+                      alt=""
+                      class="collapse__arrow collapse__arrow_mode_primary"
+                    />
+                  </a>
+                </div>
+              </div>
+              <label class="collapse__label label" for="post-2">
+                <img
+                  class="label__img"
+                  src="./img/icon_1.png"
+                  alt=""
+                  width="7.41"
+                  height="10.29"
+                />
+                <span>Показать все</span>
+              </label>
+            </div>
+          </section>
+          <section class="body__devices devices">
+            <header class="devices__header header header_mode_secondary">
+              <h2 class="header__title title title_size_md title_mode_secondary"
+                >РЕМОНТ РАЗЛИЧНЫХ ВИДОВ ТЕХНИКИ</h2
+              >
+            </header>
+            <div class="swiper swiper_mode_primary">
+              <div class="devices__wrapper swiper-wrapper">
+                <div class="devices__slide swiper-slide">
+                  <div class="devices__item">
+                    <a href="#" class="devices__link">
+                      Ремонт ноутбуков
+                      <img class="devices__arrow" src="./img/arrow.svg" alt=""
+                    /></a>
+                  </div>
+                </div>
+                <div class="devices__slide swiper-slide">
+                  <div class="devices__item">
+                    <a href="#" class="devices__link">
+                      Ремонт планшетов
+                      <img class="devices__arrow" src="img\arrow.svg" alt=""
+                    /></a>
+                  </div>
+                </div>
+                <div class="devices__slide swiper-slide">
+                  <div class="devices__item">
+                    <a href="#" class="devices__link">
+                      Ремонт ПК
+                      <img class="devices__arrow" src="img\arrow.svg" alt=""
+                    /></a>
+                  </div>
+                </div>
+                <div class="devices__slide swiper-slide">
+                  <div class="devices__item">
+                    <a href="#" class="devices__link">
+                      Ремонт мониторов
+                      <img class="devices__arrow" src="img\arrow.svg" alt=""
+                    /></a>
+                  </div>
+                </div>
+                <div class="devices__slide swiper-slide">
+                  <div class="devices__item">
+                    <a href="#" class="devices__link">
+                      Ремонт ТВ
+                      <img class="devices__arrow" src="img\arrow.svg" alt=""
+                    /></a>
+                  </div>
+                </div>
+                <div class="devices__slide swiper-slide">
+                  <div class="devices__item">
+                    <a href="#" class="devices__link">
+                      Ремонт телефонов
+                      <img class="devices__arrow" src="img\arrow.svg" alt=""
+                    /></a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+            <div class="devices__collapse collapse">
+              <input type="checkbox" class="read-more" id="post-3" />
+              <div class="collapse__row">
+                <div class="collapse__item collapse__item_mode_secondary">
+                  <a
+                    href="#"
+                    class="collapse__link collapse__link_mode_secondary"
+                    >Ремонт ноутбуков<img
+                      class="collapse__arrow collapse__arrow_mode_secondary"
+                      src="./img/arrow.svg"
+                      alt=""
+                  /></a>
+                </div>
+                <div class="collapse__item collapse__item_mode_secondary">
+                  <a
+                    href="#"
+                    class="collapse__link collapse__link_mode_secondary"
+                    >Ремонт планшетов<img
+                      class="collapse__arrow collapse__arrow_mode_secondary"
+                      src="./img/arrow.svg"
+                      alt=""
+                  /></a>
+                </div>
+                <div class="collapse__item collapse__item_mode_secondary">
+                  <a
+                    href="#"
+                    class="collapse__link collapse__link_mode_secondary"
+                    >Ремонт ПК<img
+                      class="collapse__arrow collapse__arrow_mode_secondary"
+                      src="./img/arrow.svg"
+                      alt=""
+                  /></a>
+                </div>
+                <div class="collapse__item collapse__item_mode_secondary">
+                  <a
+                    href="#"
+                    class="collapse__link collapse__link_mode_secondary"
+                    >Ремонт мониторов<img
+                      class="collapse__arrow collapse__arrow_mode_secondary"
+                      src="./img/arrow.svg"
+                      alt=""
+                  /></a>
+                </div>
+                <div class="collapse__item collapse__item_mode_secondary">
+                  <a
+                    href="#"
+                    class="collapse__link collapse__link_mode_secondary"
+                    >Ремонт ТВ<img
+                      class="collapse__arrow collapse__arrow_mode_secondary"
+                      src="./img/arrow.svg"
+                      alt=""
+                  /></a>
+                </div>
+                <div class="collapse__item collapse__item_mode_secondary">
+                  <a
+                    href="#"
+                    class="collapse__link collapse__link_mode_secondary"
+                    >Ремонт телефонов<img
+                      class="collapse__arrow collapse__arrow_mode_secondary"
+                      src="./img/arrow.svg"
+                      alt=""
+                  /></a>
+                </div>
+              </div>
+              <label class="collapse__label label" for="post-3">
+                <img
+                  class="label__img"
+                  src="./img/icon_1.png"
+                  alt=""
+                  width="7.41"
+                  height="10.29"
+                />
+                <span>Показать все</span>
+              </label>
+            </div>
+          </section>
+          <section class="body__services services">
+            <header class="services__header header header_mode_secondary">
+              <h2 class="header__title title title_size_md title_mode_secondary"
+                >ЦЕНЫ НА УСЛУГИ</h2
+              >
+            </header>
+            <div class="services__swiper swiper swiper_mode_primary">
+              <div class="services__wrapper swiper-wrapper">
+                <div class="services__slide swiper-slide">
+                  <div class="services__item">
+                    <div class="services__type">
+                      <h3
+                        class="services__title title title_size_xs title_mode_ternary"
+                        >Ремонтные услуги</h3
+                      >
+                      <p class="services__text"
+                        >Тестирование с выдачей технического заключения</p
+                      >
+                    </div>
+                    <div class="services__price">
+                      <h3
+                        class="services__title title title_size_xs title_mode_ternary"
+                        >Цена</h3
+                      >
+                      <p class="services__text">1000&#8381;</p>
+                    </div>
+                    <div class="services__date">
+                      <h3
+                        class="services__title title title_size_xs title_mode_ternary"
+                        >Срок</h3
+                      >
+                      <p class="services__text">30-120 мин</p>
+                    </div>
+                    <button class="services__btn btn">ЗАКАЗАТЬ</button>
+                  </div>
+                </div>
+                <div class="services__slide swiper-slide">
+                  <div class="services__item">
+                    <div class="services__type">
+                      <h3
+                        class="services__title title title_size_xs title_mode_ternary"
+                        >Ремонтные услуги</h3
+                      >
+                      <p class="services__text">Диагностика</p>
+                    </div>
+                    <div class="services__price">
+                      <h3
+                        class="services__title title title_size_xs title_mode_ternary"
+                        >Цена</h3
+                      >
+                      <p class="services__text">Бесплатно</p>
+                    </div>
+                    <div class="services__date">
+                      <h3
+                        class="services__title title title_size_xs title_mode_ternary"
+                        >Срок</h3
+                      >
+                      <p class="services__text">30 мин</p>
+                    </div>
+                    <button class="services__btn btn">ЗАКАЗАТЬ</button>
+                  </div>
+                </div>
+                <div class="services__slide swiper-slide">
+                  <div class="services__item">
+                    <div class="services__type">
+                      <h3
+                        class="services__title title title_size_xs title_mode_ternary"
+                        >Ремонтные услуги</h3
+                      >
+                      <p class="services__text">Замена дисплея</p>
+                    </div>
+                    <div class="services__price">
+                      <h3
+                        class="services__title title title_size_xs title_mode_ternary"
+                        >Цена</h3
+                      >
+                      <p class="services__text">1000&#8381;</p>
+                    </div>
+                    <div class="services__date">
+                      <h3
+                        class="services__title title title_size_xs title_mode_ternary"
+                        >Срок</h3
+                      >
+                      <p class="services__text">30-120 мин</p>
+                    </div>
+                    <button class="services__btn btn">ЗАКАЗАТЬ</button>
+                  </div>
+                </div>
+                <div class="services__slide swiper-slide">
+                  <div class="services__item">
+                    <div class="services__type">
+                      <h3
+                        class="services__title title title_size_xs title_mode_ternary"
+                        >Ремонтные услуги</h3
+                      >
+                      <p class="services__text"
+                        >Замена полифонического динамика</p
+                      >
+                    </div>
+                    <div class="services__price">
+                      <h3
+                        class="services__title title title_size_xs title_mode_ternary"
+                        >Цена</h3
+                      >
+                      <p class="services__text">1000&#8381;</p>
+                    </div>
+                    <div class="services__date">
+                      <h3
+                        class="services__title title title_size_xs title_mode_ternary"
+                        >Срок</h3
+                      >
+                      <p class="services__text">30-120 мин</p>
+                    </div>
+                    <button class="services__btn btn">ЗАКАЗАТЬ</button>
+                  </div>
+                </div>
+                <div class="services__slide swiper-slide">
+                  <div class="services__item">
+                    <div class="services__type">
+                      <h3
+                        class="services__title title title_size_xs title_mode_ternary"
+                        >Ремонтные услуги</h3
+                      >
+                      <p class="services__text"
+                        >Замена программного обеспечения</p
+                      >
+                    </div>
+                    <div class="services__price">
+                      <h3
+                        class="services__title title title_size_xs title_mode_ternary"
+                        >Цена</h3
+                      >
+                      <p class="services__text">1000&#8381;</p>
+                    </div>
+                    <div class="services__date">
+                      <h3
+                        class="services__title title title_size_xs title_mode_ternary"
+                        >Срок</h3
+                      >
+                      <p class="services__text">30-120 мин</p>
+                    </div>
+                    <button class="services__btn btn">ЗАКАЗАТЬ</button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+            <div class="services__table table">
+              <div class="table__row">
+                <ul class="table__list">
+                  <li class="table__service"
+                    ><h3
+                      class="table__title title title title_size_xs title_mode_ternary"
+                      >Ремонтируемые услуги</h3
+                    ></li
+                  >
+                  <li class="table__price"
+                    ><h3
+                      class="table__title title title title_size_xs title_mode_ternary"
+                      >Цена</h3
+                    ></li
+                  >
+                  <li class="table__date"
+                    ><h3
+                      class="table__title title title title_size_xs title_mode_ternary"
+                      >Срок</h3
+                    ></li
+                  >
+                </ul>
+              </div>
+              <div class="table__row">
+                <ul class="table__list">
+                  <li class="table__service">Диагностика</li>
+                  <li class="table__price">Бесплатно</li>
+                  <li class="table__date">30 мин</li>
+                  <li class="table__item"
+                    ><button class="table__btn btn">ЗАКАЗАТЬ</button></li
+                  >
+                </ul>
+              </div>
+              <div class="table__row">
+                <ul class="table__list">
+                  <li class="table__service">Замена дисплея</li>
+                  <li class="table__price">1000&#8381;</li>
+                  <li class="table__date">30-120 мин</li>
+                  <li class="table__item"
+                    ><button class="table__btn btn">ЗАКАЗАТЬ</button></li
+                  >
+                </ul>
+              </div>
+              <div class="table__row">
+                <ul class="table__list">
+                  <li class="table__service"
+                    >Замена полифонического динамика</li
+                  >
+                  <li class="table__price">1000&#8381;</li>
+                  <li class="table__date">30-120 мин</li>
+                  <li class="table__item"
+                    ><button class="table__btn btn">ЗАКАЗАТЬ</button></li
+                  >
+                </ul>
+              </div>
+              <div class="table__row">
+                <ul class="table__list">
+                  <li class="table__service"
+                    >Тестирование с выдачей технического заключения</li
+                  >
+                  <li class="table__price">1000&#8381;</li>
+                  <li class="table__date">30-120 мин</li>
+                  <li class="table__item"
+                    ><button class="table__btn btn">ЗАКАЗАТЬ</button></li
+                  >
+                </ul>
+              </div>
+              <div class="table__row">
+                <ul class="table__list">
+                  <li class="table__service"
+                    >Замена программного обеспечения</li
+                  >
+                  <li class="table__price">1000&#8381;</li>
+                  <li class="table__date">30-120 мин</li>
+                  <li class="table__item"
+                    ><button class="table__btn btn">ЗАКАЗАТЬ</button></li
+                  >
+                </ul>
+              </div>
+            </div>
+            <div class="services__price-info price-info">
+              <p class="price-info__text"
+                >Все цены указаны с учетом НДС. Стоимость ремонта указана на
+                единичную услугу. Для получения коммерческого предложения на
+                постоянное обслуживание, оставьте заявку.</p
+              >
+              <div class="commercial-offer"
+                ><a href="#" class="commercial-offer__link"
+                  >Получить коммерческое предложение</a
+                ></div
+              >
+            </div>
+          </section>
+        </main>
+        <footer class="page__footer footer"
+          ><p class="footer__copyright"
+            >© 2019 CPS <br />
+            Разработано командой Apesong</p
           >
-          <div
-            class="body__upper-menu upper-menu upper-menu_hidden upper-menu_visible"
-          >
-            <label
-              >Оставить заявку
-              <button class="upper-menu__repair btn" type="button"></button>
-            </label>
-            <label
-              >Статус ремонта
-              <button
-                class="upper-menu__check-status btn"
-                type="button"
-              ></button>
-            </label>
-          </div>
-        </div>
-        <nav class="body__slide-menu slide-menu">
-          <div class="slide-menu__fadecopy"></div>
-          <ul class="slide-menu__service">
-            <li class="slide-menu__item">
-              <a class="slide-menu__link" href="#">Ремонтируемые устройства</a>
-            </li>
-            <li class="slide-menu__item">
-              <a class="slide-menu__link" href="#">Дополнительные услуги</a>
-            </li>
-            <li class="slide-menu__item">
-              <a class="slide-menu__link" href="#">Цены на услуги</a>
-            </li>
-            <li class="slide-menu__item">
-              <a class="slide-menu__link" href="#">Адреса сервисных центров</a>
-            </li>
-            <li class="slide-menu__item">
-              <a class="slide-menu__link" href="#">Специальные цены</a>
-            </li>
-            <li class="slide-menu__item">
-              <a class="slide-menu__link" href="#">Отзывы</a>
-            </li>
-          </ul>
-        </nav>
-        <article class="body__about about">
-          <div class="about__item">
-            <input class="read-more" type="checkbox" id="post-1" />
-            <div class="about__excerpt">
-              <p class="about__text">
-                Мы являемся авторизованным сервисным центром по ремонту техники
-                Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с
-                официальной гарантией производителя.
-              </p>
-              <p class="about__text">
-                Мы успешно работаем с 1992 года и заслужили репутацию надежного
-                партнера, что подтверждает большое количество постоянных
-                клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям
-                и, в свою очередь, советуют нас родным и близким.
-              </p>
-            </div>
-            <label class="label" for="post-1">
-              <img
-                class="label__img"
-                src="./img/icon_1.png"
-                alt=""
-                width="7.41"
-                height="10.29"
-              />
-              <span>Читать далее</span>
-            </label>
-          </div>
-          <div class="about__image">
-            <img class="about__pic" src="./img/cps.png" alt="" />
-          </div>
-        </article>
-        <section class="body__brand brand">
-          <header class="brand__header header header_mode_secondary">
-            <h2 class="header__title title title_size_md title_mode_secondary"
-              >РЕМОНТ ТЕХНИКИ РАЗЛИЧНЫХ БРЕНДОВ</h2
-            >
-          </header>
-          <div class="swiper swiper_mode_primary">
-            <div class="brand__wrapper swiper-wrapper">
-              <div class="brand__slide swiper-slide">
-                <div class="brand__item">
-                  <a href="#" class="brand__link">
-                    <img class="brand__type" src="./img/lenovo_1.svg" alt="" />
-                    <img src="./img/arrow.svg" alt="" class="brand__arrow" />
-                  </a>
-                </div>
-              </div>
-              <div class="brand__slide swiper-slide">
-                <div class="brand__item">
-                  <a href="#" class="brand__link">
-                    <img class="brand__type" src="./img/samsung_1.svg" alt="" />
-                    <img src="./img/arrow.svg" alt="" class="brand__arrow" />
-                  </a>
-                </div>
-              </div>
-              <div class="brand__slide swiper-slide">
-                <div class="brand__item">
-                  <a href="#" class="brand__link">
-                    <img class="brand__type" src="./img/apple_1.svg" alt="" />
-                    <img src="./img/arrow.svg" alt="" class="brand__arrow" />
-                  </a>
-                </div>
-              </div>
-              <div class="brand__slide swiper-slide">
-                <div class="brand__item">
-                  <a href="#" class="brand__link">
-                    <img class="brand__type" src="./img/sonic.svg" alt="" />
-                    <img src="./img/arrow.svg" alt="" class="brand__arrow" />
-                  </a>
-                </div>
-              </div>
-              <div class="brand__slide swiper-slide">
-                <div class="brand__item">
-                  <a href="#" class="brand__link">
-                    <img class="brand__type" src="./img/bosch.svg" alt="" />
-                    <img src="./img/arrow.svg" alt="" class="brand__arrow" />
-                  </a>
-                </div>
-              </div>
-              <div class="brand__slide swiper-slide">
-                <div class="brand__item">
-                  <a href="#" class="brand__link">
-                    <img class="brand__type" src="./img/hp.svg" alt="" />
-                    <img src="./img/arrow.svg" alt="" class="brand__arrow" />
-                  </a>
-                </div>
-              </div>
-              <div class="brand__slide swiper-slide">
-                <div class="brand__item">
-                  <a href="#" class="brand__link">
-                    <img class="brand__type" src="./img/acer.svg" alt="" />
-                    <img src="./img/arrow.svg" alt="" class="brand__arrow" />
-                  </a>
-                </div>
-              </div>
-              <div class="brand__slide swiper-slide">
-                <div class="brand__item">
-                  <a href="#" class="brand__link">
-                    <img class="brand__type" src="./img/sony.svg" alt="" />
-                    <img src="./img/arrow.svg" alt="" class="brand__arrow" />
-                  </a>
-                </div>
-              </div>
-              <div class="brand__slide swiper-slide">
-                <div class="brand__item">
-                  <a href="#" class="brand__link">
-                    <img class="brand__type" src="./img/lenovo_2.svg" alt="" />
-                    <img src="./img/arrow.svg" alt="" class="brand__arrow" />
-                  </a>
-                </div>
-              </div>
-              <div class="brand__slide swiper-slide">
-                <div class="brand__item">
-                  <a href="#" class="brand__link">
-                    <img class="brand__type" src="./img/samsung_2.svg" alt="" />
-                    <img src="./img/arrow.svg" alt="" class="brand__arrow" />
-                  </a>
-                </div>
-              </div>
-              <div class="brand__slide swiper-slide">
-                <div class="brand__item">
-                  <a href="#" class="brand__link">
-                    <img class="brand__type" src="./img/apple_2.svg" alt="" />
-                    <img src="./img/arrow.svg" alt="" class="brand__arrow" />
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-pagination"></div>
-          </div>
-          <div class="brand__collapse collapse">
-            <input type="checkbox" class="read-more" id="post-2" />
-            <div class="collapse__row">
-              <div class="collapse__item collapse__item_mode_primary">
-                <a href="#" class="collapse__link collapse__link_mode_primary">
-                  <img class="collapse__type" src="./img/lenovo_1.svg" alt="" />
-                  <img
-                    src="./img/arrow.svg"
-                    alt=""
-                    class="collapse__arrow collapse__arrow_mode_primary"
-                  />
-                </a>
-              </div>
-              <div class="collapse__item collapse__item_mode_primary">
-                <a href="#" class="collapse__link collapse__link_mode_primary">
-                  <img
-                    class="collapse__type"
-                    src="./img/samsung_1.svg"
-                    alt=""
-                  />
-                  <img
-                    src="./img/arrow.svg"
-                    alt=""
-                    class="collapse__arrow collapse__arrow_mode_primary"
-                  />
-                </a>
-              </div>
-              <div class="collapse__item collapse__item_mode_primary">
-                <a href="#" class="collapse__link collapse__link_mode_primary">
-                  <img class="collapse__type" src="./img/apple_1.svg" alt="" />
-                  <img
-                    src="./img/arrow.svg"
-                    alt=""
-                    class="collapse__arrow collapse__arrow_mode_primary"
-                  />
-                </a>
-              </div>
-              <div class="collapse__item collapse__item_mode_primary">
-                <a href="#" class="collapse__link collapse__link_mode_primary">
-                  <img class="collapse__type" src="./img/sonic.svg" alt="" />
-                  <img
-                    src="./img/arrow.svg"
-                    alt=""
-                    class="collapse__arrow collapse__arrow_mode_primary"
-                  />
-                </a>
-              </div>
-              <div class="collapse__item collapse__item_mode_primary">
-                <a href="#" class="collapse__link collapse__link_mode_primary">
-                  <img class="collapse__type" src="./img/bosch.svg" alt="" />
-                  <img
-                    src="./img/arrow.svg"
-                    alt=""
-                    class="collapse__arrow collapse__arrow_mode_primary"
-                  />
-                </a>
-              </div>
-              <div class="collapse__item collapse__item_mode_primary">
-                <a href="#" class="collapse__link collapse__link_mode_primary">
-                  <img class="collapse__type" src="./img/hp.svg" alt="" />
-                  <img
-                    src="./img/arrow.svg"
-                    alt=""
-                    class="collapse__arrow collapse__arrow_mode_primary"
-                  />
-                </a>
-              </div>
-              <div class="collapse__item collapse__item_mode_primary">
-                <a href="#" class="collapse__link collapse__link_mode_primary">
-                  <img class="collapse__type" src="./img/acer.svg" alt="" />
-                  <img
-                    src="./img/arrow.svg"
-                    alt=""
-                    class="collapse__arrow collapse__arrow_mode_primary"
-                  />
-                </a>
-              </div>
-              <div class="collapse__item collapse__item_mode_primary">
-                <a href="#" class="collapse__link collapse__link_mode_primary">
-                  <img class="collapse__type" src="./img/sony.svg" alt="" />
-                  <img
-                    src="./img/arrow.svg"
-                    alt=""
-                    class="collapse__arrow collapse__arrow_mode_primary"
-                  />
-                </a>
-              </div>
-              <div class="collapse__item collapse__item_mode_primary">
-                <a href="#" class="collapse__link collapse__link_mode_primary">
-                  <img class="collapse__type" src="./img/lenovo_2.svg" alt="" />
-                  <img
-                    src="./img/arrow.svg"
-                    alt=""
-                    class="collapse__arrow collapse__arrow_mode_primary"
-                  />
-                </a>
-              </div>
-              <div class="collapse__item collapse__item_mode_primary">
-                <a href="#" class="collapse__link collapse__link_mode_primary">
-                  <img
-                    class="collapse__type"
-                    src="./img/samsung_2.svg"
-                    alt=""
-                  />
-                  <img
-                    src="./img/arrow.svg"
-                    alt=""
-                    class="collapse__arrow collapse__arrow_mode_primary"
-                  />
-                </a>
-              </div>
-              <div class="collapse__item collapse__item_mode_primary">
-                <a href="#" class="collapse__link collapse__link_mode_primary">
-                  <img class="collapse__type" src="./img/apple_2.svg" alt="" />
-                  <img
-                    src="./img/arrow.svg"
-                    alt=""
-                    class="collapse__arrow collapse__arrow_mode_primary"
-                  />
-                </a>
-              </div>
-            </div>
-            <label class="collapse__label label" for="post-2">
-              <img
-                class="label__img"
-                src="./img/icon_1.png"
-                alt=""
-                width="7.41"
-                height="10.29"
-              />
-              <span>Показать все</span>
-            </label>
-          </div>
-        </section>
-        <section class="body__devices devices">
-          <header class="devices__header header header_mode_secondary">
-            <h2 class="header__title title title_size_md title_mode_secondary"
-              >РЕМОНТ РАЗЛИЧНЫХ ВИДОВ ТЕХНИКИ</h2
-            >
-          </header>
-          <div class="swiper swiper_mode_primary">
-            <div class="devices__wrapper swiper-wrapper">
-              <div class="devices__slide swiper-slide">
-                <div class="devices__item">
-                  <a href="#" class="devices__link">
-                    Ремонт ноутбуков
-                    <img class="devices__arrow" src="./img/arrow.svg" alt=""
-                  /></a>
-                </div>
-              </div>
-              <div class="devices__slide swiper-slide">
-                <div class="devices__item">
-                  <a href="#" class="devices__link">
-                    Ремонт планшетов
-                    <img class="devices__arrow" src="img\arrow.svg" alt=""
-                  /></a>
-                </div>
-              </div>
-              <div class="devices__slide swiper-slide">
-                <div class="devices__item">
-                  <a href="#" class="devices__link">
-                    Ремонт ПК
-                    <img class="devices__arrow" src="img\arrow.svg" alt=""
-                  /></a>
-                </div>
-              </div>
-              <div class="devices__slide swiper-slide">
-                <div class="devices__item">
-                  <a href="#" class="devices__link">
-                    Ремонт мониторов
-                    <img class="devices__arrow" src="img\arrow.svg" alt=""
-                  /></a>
-                </div>
-              </div>
-              <div class="devices__slide swiper-slide">
-                <div class="devices__item">
-                  <a href="#" class="devices__link">
-                    Ремонт ТВ
-                    <img class="devices__arrow" src="img\arrow.svg" alt=""
-                  /></a>
-                </div>
-              </div>
-              <div class="devices__slide swiper-slide">
-                <div class="devices__item">
-                  <a href="#" class="devices__link">
-                    Ремонт телефонов
-                    <img class="devices__arrow" src="img\arrow.svg" alt=""
-                  /></a>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-pagination"></div>
-          </div>
-          <div class="devices__collapse collapse">
-            <input type="checkbox" class="read-more" id="post-3" />
-            <div class="collapse__row">
-              <div class="collapse__item collapse__item_mode_secondary">
-                <a href="#" class="collapse__link collapse__link_mode_secondary"
-                  >Ремонт ноутбуков<img
-                    class="collapse__arrow collapse__arrow_mode_secondary"
-                    src="./img/arrow.svg"
-                    alt=""
-                /></a>
-              </div>
-              <div class="collapse__item collapse__item_mode_secondary">
-                <a href="#" class="collapse__link collapse__link_mode_secondary"
-                  >Ремонт планшетов<img
-                    class="collapse__arrow collapse__arrow_mode_secondary"
-                    src="./img/arrow.svg"
-                    alt=""
-                /></a>
-              </div>
-              <div class="collapse__item collapse__item_mode_secondary">
-                <a href="#" class="collapse__link collapse__link_mode_secondary"
-                  >Ремонт ПК<img
-                    class="collapse__arrow collapse__arrow_mode_secondary"
-                    src="./img/arrow.svg"
-                    alt=""
-                /></a>
-              </div>
-              <div class="collapse__item collapse__item_mode_secondary">
-                <a href="#" class="collapse__link collapse__link_mode_secondary"
-                  >Ремонт мониторов<img
-                    class="collapse__arrow collapse__arrow_mode_secondary"
-                    src="./img/arrow.svg"
-                    alt=""
-                /></a>
-              </div>
-              <div class="collapse__item collapse__item_mode_secondary">
-                <a href="#" class="collapse__link collapse__link_mode_secondary"
-                  >Ремонт ТВ<img
-                    class="collapse__arrow collapse__arrow_mode_secondary"
-                    src="./img/arrow.svg"
-                    alt=""
-                /></a>
-              </div>
-              <div class="collapse__item collapse__item_mode_secondary">
-                <a href="#" class="collapse__link collapse__link_mode_secondary"
-                  >Ремонт телефонов<img
-                    class="collapse__arrow collapse__arrow_mode_secondary"
-                    src="./img/arrow.svg"
-                    alt=""
-                /></a>
-              </div>
-            </div>
-            <label class="collapse__label label" for="post-3">
-              <img
-                class="label__img"
-                src="./img/icon_1.png"
-                alt=""
-                width="7.41"
-                height="10.29"
-              />
-              <span>Показать все</span>
-            </label>
-          </div>
-        </section>
-        <section class="body__services services">
-          <header class="services__header header header_mode_secondary">
-            <h2 class="header__title title title_size_md title_mode_secondary"
-              >ЦЕНЫ НА УСЛУГИ</h2
-            >
-          </header>
-          <div class="services__swiper swiper swiper_mode_primary">
-            <div class="services__wrapper swiper-wrapper">
-              <div class="services__slide swiper-slide">
-                <div class="services__item">
-                  <div class="services__type">
-                    <h3
-                      class="services__title title title_size_xs title_mode_ternary"
-                      >Ремонтные услуги</h3
-                    >
-                    <p class="services__text"
-                      >Тестирование с выдачей технического заключения</p
-                    >
-                  </div>
-                  <div class="services__price">
-                    <h3
-                      class="services__title title title_size_xs title_mode_ternary"
-                      >Цена</h3
-                    >
-                    <p class="services__text">1000&#8381;</p>
-                  </div>
-                  <div class="services__date">
-                    <h3
-                      class="services__title title title_size_xs title_mode_ternary"
-                      >Срок</h3
-                    >
-                    <p class="services__text">30-120 мин</p>
-                  </div>
-                  <button class="services__btn btn">ЗАКАЗАТЬ</button>
-                </div>
-              </div>
-              <div class="services__slide swiper-slide">
-                <div class="services__item">
-                  <div class="services__type">
-                    <h3
-                      class="services__title title title_size_xs title_mode_ternary"
-                      >Ремонтные услуги</h3
-                    >
-                    <p class="services__text">Диагностика</p>
-                  </div>
-                  <div class="services__price">
-                    <h3
-                      class="services__title title title_size_xs title_mode_ternary"
-                      >Цена</h3
-                    >
-                    <p class="services__text">Бесплатно</p>
-                  </div>
-                  <div class="services__date">
-                    <h3
-                      class="services__title title title_size_xs title_mode_ternary"
-                      >Срок</h3
-                    >
-                    <p class="services__text">30 мин</p>
-                  </div>
-                  <button class="services__btn btn">ЗАКАЗАТЬ</button>
-                </div>
-              </div>
-              <div class="services__slide swiper-slide">
-                <div class="services__item">
-                  <div class="services__type">
-                    <h3
-                      class="services__title title title_size_xs title_mode_ternary"
-                      >Ремонтные услуги</h3
-                    >
-                    <p class="services__text">Замена дисплея</p>
-                  </div>
-                  <div class="services__price">
-                    <h3
-                      class="services__title title title_size_xs title_mode_ternary"
-                      >Цена</h3
-                    >
-                    <p class="services__text">1000&#8381;</p>
-                  </div>
-                  <div class="services__date">
-                    <h3
-                      class="services__title title title_size_xs title_mode_ternary"
-                      >Срок</h3
-                    >
-                    <p class="services__text">30-120 мин</p>
-                  </div>
-                  <button class="services__btn btn">ЗАКАЗАТЬ</button>
-                </div>
-              </div>
-              <div class="services__slide swiper-slide">
-                <div class="services__item">
-                  <div class="services__type">
-                    <h3
-                      class="services__title title title_size_xs title_mode_ternary"
-                      >Ремонтные услуги</h3
-                    >
-                    <p class="services__text"
-                      >Замена полифонического динамика</p
-                    >
-                  </div>
-                  <div class="services__price">
-                    <h3
-                      class="services__title title title_size_xs title_mode_ternary"
-                      >Цена</h3
-                    >
-                    <p class="services__text">1000&#8381;</p>
-                  </div>
-                  <div class="services__date">
-                    <h3
-                      class="services__title title title_size_xs title_mode_ternary"
-                      >Срок</h3
-                    >
-                    <p class="services__text">30-120 мин</p>
-                  </div>
-                  <button class="services__btn btn">ЗАКАЗАТЬ</button>
-                </div>
-              </div>
-              <div class="services__slide swiper-slide">
-                <div class="services__item">
-                  <div class="services__type">
-                    <h3
-                      class="services__title title title_size_xs title_mode_ternary"
-                      >Ремонтные услуги</h3
-                    >
-                    <p class="services__text"
-                      >Замена программного обеспечения</p
-                    >
-                  </div>
-                  <div class="services__price">
-                    <h3
-                      class="services__title title title_size_xs title_mode_ternary"
-                      >Цена</h3
-                    >
-                    <p class="services__text">1000&#8381;</p>
-                  </div>
-                  <div class="services__date">
-                    <h3
-                      class="services__title title title_size_xs title_mode_ternary"
-                      >Срок</h3
-                    >
-                    <p class="services__text">30-120 мин</p>
-                  </div>
-                  <button class="services__btn btn">ЗАКАЗАТЬ</button>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-pagination"></div>
-          </div>
-          <div class="services__table table">
-            <div class="table__row">
-              <ul class="table__list">
-                <li class="table__service"
-                  ><h3
-                    class="table__title title title title_size_xs title_mode_ternary"
-                    >Ремонтируемые услуги</h3
-                  ></li
-                >
-                <li class="table__price"
-                  ><h3
-                    class="table__title title title title_size_xs title_mode_ternary"
-                    >Цена</h3
-                  ></li
-                >
-                <li class="table__date"
-                  ><h3
-                    class="table__title title title title_size_xs title_mode_ternary"
-                    >Срок</h3
-                  ></li
-                >
-              </ul>
-            </div>
-            <div class="table__row">
-              <ul class="table__list">
-                <li class="table__service">Диагностика</li>
-                <li class="table__price">Бесплатно</li>
-                <li class="table__date">30 мин</li>
-                <li class="table__item"
-                  ><button class="table__btn btn">ЗАКАЗАТЬ</button></li
-                >
-              </ul>
-            </div>
-            <div class="table__row">
-              <ul class="table__list">
-                <li class="table__service">Замена дисплея</li>
-                <li class="table__price">1000&#8381;</li>
-                <li class="table__date">30-120 мин</li>
-                <li class="table__item"
-                  ><button class="table__btn btn">ЗАКАЗАТЬ</button></li
-                >
-              </ul>
-            </div>
-            <div class="table__row">
-              <ul class="table__list">
-                <li class="table__service">Замена полифонического динамика</li>
-                <li class="table__price">1000&#8381;</li>
-                <li class="table__date">30-120 мин</li>
-                <li class="table__item"
-                  ><button class="table__btn btn">ЗАКАЗАТЬ</button></li
-                >
-              </ul>
-            </div>
-            <div class="table__row">
-              <ul class="table__list">
-                <li class="table__service"
-                  >Тестирование с выдачей технического заключения</li
-                >
-                <li class="table__price">1000&#8381;</li>
-                <li class="table__date">30-120 мин</li>
-                <li class="table__item"
-                  ><button class="table__btn btn">ЗАКАЗАТЬ</button></li
-                >
-              </ul>
-            </div>
-            <div class="table__row">
-              <ul class="table__list">
-                <li class="table__service">Замена программного обеспечения</li>
-                <li class="table__price">1000&#8381;</li>
-                <li class="table__date">30-120 мин</li>
-                <li class="table__item"
-                  ><button class="table__btn btn">ЗАКАЗАТЬ</button></li
-                >
-              </ul>
-            </div>
-          </div>
-          <div class="services__price-info price-info">
-            <p class="price-info__text"
-              >Все цены указаны с учетом НДС. Стоимость ремонта указана на
-              единичную услугу. Для получения коммерческого предложения на
-              постоянное обслуживание, оставьте заявку.</p
-            >
-            <div class="commercial-offer"
-              ><a href="#" class="commercial-offer__link"
-                >Получить коммерческое предложение</a
-              ></div
-            >
-          </div>
-        </section>
-      </main>
-      <footer class="page__footer footer"
-        ><p class="footer__copyright"
-          >© 2019 CPS <br />
-          Разработано командой Apesong</p
+          <p class="footer__privacy-policy">Политика конфиденциальности</p
+          ><p class="footer__disclaimer">
+            Информация, размещенная на данной странице, не является публичной
+            офертой</p
+          ></footer
         >
-        <p class="footer__privacy-policy">Политика конфиденциальности</p
-        ><p class="footer__disclaimer">
-          Информация, размещенная на данной странице, не является публичной
-          офертой</p
-        ></footer
-      >
+      </div>
     </div>
   </body>
 </html>

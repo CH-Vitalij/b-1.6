@@ -11,6 +11,11 @@
     background-color: $color-default;
     padding-left: 16px;
     padding-right: 16px;
+
+    @media (min-width: 992px) {
+      padding-left: 24px;
+      padding-right: 24px;
+    }
   }
 
   &__row:first-child {
@@ -48,7 +53,7 @@
   }
 
   &__service {
-    width: 52%;
+    width: 51%;
 
     @media (min-width: 992px) {
       width: 45%;
@@ -72,10 +77,11 @@
   }
 
   &__item {
-    width: 16%;
+    width: 17%;
 
     @media (min-width: 992px) {
       width: 13%;
+      text-align: right;
     }
   }
 
