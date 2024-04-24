@@ -57,6 +57,11 @@
     @media (min-width: 992px) {
       letter-spacing: 0.24px;
     }
+
+    &_active {
+      box-shadow: inset 0 0 0 2px #b8ffec;
+      background-color: #ffffff;
+    }
   }
 
   &__link:hover,
