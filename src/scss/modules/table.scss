@@ -1,6 +1,10 @@
 .table {
-  display: flex;
-  flex-wrap: wrap;
+  display: none;
+
+  @media (min-width: $tableWidth) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 
   &__row {
     flex-basis: 100%;
@@ -13,7 +17,7 @@
     border-top-right-radius: 6px;
     border-top-left-radius: 6px;
     background-color: $color-page;
-    
+
     .table__list {
       border: none;
     }
@@ -43,12 +47,36 @@
     list-style: none;
   }
 
-  &__item {
-    width: 16%;
+  &__service {
+    width: 52%;
+
+    @media (min-width: 992px) {
+      width: 45%;
+    }
   }
 
-  &__item:first-child {
-    width: 50%;
+  &__price {
+    width: 16%;
+
+    @media (min-width: 992px) {
+      width: 25%;
+    }
+  }
+
+  &__date {
+    width: 16%;
+
+    @media (min-width: 992px) {
+      width: 17%;
+    }
+  }
+
+  &__item {
+    width: 16%;
+
+    @media (min-width: 992px) {
+      width: 13%;
+    }
   }
 
   &__btn {
@@ -75,3 +103,4 @@
     transform: translate(20px, 6px);
   }
 }
+
