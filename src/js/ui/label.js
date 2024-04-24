@@ -1,47 +1,47 @@
 function label() {
-  var a1 = document.querySelectorAll('.read-more')
-  var a2 = document.querySelectorAll('.label')
-  var a3 = []
-  var a4 = []
-  var a5 = document.querySelector('.about__excerpt')
-  var a6 = document.querySelectorAll('.collapse__row')
-  var a7 = [a5]
+  var readMore = document.querySelectorAll('.read-more')
+  var label = document.querySelectorAll('.label')
+  var labelSpan  = []
+  var labelImg  = []
+  var aboutExcerpt  = document.querySelector('.about__excerpt')
+  var collapseRows  = document.querySelectorAll('.collapse__row')
+  var arr = [aboutExcerpt]
 
-  var toggleElementBehavior = function (a1, a3, a4, a7) {
-    a1.addEventListener('change', function () {
-      if (a1.checked) {
-        a4.style.transform = 'rotate(180deg)'
-        a7.style.maxHeight = '1000px'
+  var toggleElementBehavior = function (readMore, labelSpan , labelImg , arr) {
+    readMore.addEventListener('change', function () {
+      if (readMore.checked) {
+        labelImg .style.transform = 'rotate(180deg)'
+        arr.style.maxHeight = '1000px'
 
-        if (a3.textContent === 'Читать далее') {
-          a3.textContent = 'Свернуть'
+        if (labelSpan .textContent === 'Читать далее') {
+          labelSpan .textContent = 'Свернуть'
         } else {
-          a3.textContent = 'Скрыть'
+          labelSpan .textContent = 'Скрыть'
         }
       } else {
-        a4.style.transform = ''
-        a7.style.maxHeight = ''
+        labelImg .style.transform = ''
+        arr.style.maxHeight = ''
 
-        if (a3.textContent === 'Свернуть') {
-          a3.textContent = 'Читать далее'
+        if (labelSpan .textContent === 'Свернуть') {
+          labelSpan .textContent = 'Читать далее'
         } else {
-          a3.textContent = 'Показать все'
+          labelSpan .textContent = 'Показать все'
         }
       }
     })
   }
 
-  a2.forEach((element) => {
-    a3.push(element.querySelector('span'))
-    a4.push(element.querySelector('.label__img'))
+  label.forEach((element) => {
+    labelSpan .push(element.querySelector('span'))
+    labelImg .push(element.querySelector('.label__img'))
   })
 
-  a6.forEach((element) => {
-    a7.push(element)
+  collapseRows .forEach((element) => {
+    arr.push(element)
   })
 
-  a1.forEach((element, i) => {
-    toggleElementBehavior(element, a3[i], a4[i], a7[i])
+  readMore.forEach((element, i) => {
+    toggleElementBehavior(element, labelSpan [i], labelImg [i], arr[i])
   })
 }
 
