@@ -33,7 +33,6 @@
 
     &:hover {
       .devices__arrow {
-        transition-duration: 0.6s;
         transform: scale(1.2) rotate(360deg);
       }
     }
@@ -43,6 +42,8 @@
     position: absolute;
     bottom: 16px;
     right: 16px;
+    transition-duration: 0.6s;
+    transition-property: transform;
   }
 
   &__collapse {
