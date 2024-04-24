@@ -69,8 +69,9 @@
     content: '';
     position: absolute;
     background-image: url('../img/arrow_2.svg');
-    width: 24px;
-    height: 24px;
-    transform: translate(10px, -1px);
+    background-repeat: no-repeat;
+    width: 10px;
+    height: 10px;
+    transform: translate(20px, 6px);
   }
 }
