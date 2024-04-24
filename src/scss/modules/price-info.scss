@@ -1,0 +1,13 @@
+.price-info {
+  font-weight: 400;
+  font-size: $font-size;
+  line-height: $line-height_sm;
+  letter-spacing: 0.2px;
+  text-align: left;
+  color: $color-text;
+
+  &__text {
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+}

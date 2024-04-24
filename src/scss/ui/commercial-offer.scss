@@ -1,0 +1,29 @@
+.commercial-offer {
+  font-weight: 500;
+  font-size: $font-size_sm;
+  line-height: $line-height_md;
+  letter-spacing: -0.2px;
+  text-align: left;
+
+  &__link {
+    text-decoration: none;
+    color: $color-text;
+  }
+
+  &__link::after {
+    content: '';
+    display: inline-block;
+    background-image: url('../img/arrow_3.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 15px;
+    height: 15px;
+    vertical-align: middle;
+    transform: translateX(5px);
+    transition: transform 0.6s;
+  }
+
+  &__link:hover::after {
+    transform: translateX(10px);
+  }
+}
