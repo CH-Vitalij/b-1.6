@@ -12,13 +12,6 @@
     column-gap: 16px;
     margin: 0;
     padding: 0;
-    padding-left: 16px;
-    padding-right: 16px;
-
-    @media (min-width: $tableWidth) {
-      padding-left: 24px;
-      padding-right: 24px;
-    }
   }
 
   &__upper-menu_hidden {

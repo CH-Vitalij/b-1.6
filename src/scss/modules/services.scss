@@ -1,4 +1,8 @@
 .services {
+  &__swiper {
+    margin-bottom: 16px;
+  }
+
   &__header {
     margin-bottom: 16px;
 
@@ -74,9 +78,11 @@
 
   &__table {
     padding: 0 24px;
+    margin-bottom: 24px;
 
     @media (min-width: 992px) {
       padding: 0 32px;
+      margin-bottom: 32px;
     }
   }
 

@@ -1,0 +1,44 @@
+.footer {
+  color: $color-grey;
+  box-shadow: inset 0 1px 0 0 $color-shadow;
+  font-weight: 500;
+  font-size: $font-size;
+  line-height: $line-height_xs;
+  opacity: 72.18%;
+
+  @media (min-width: $tableWidth) {
+    display: flex;
+  }
+
+  &__copyright {
+    margin: 16px 0;
+    text-align: center;
+
+    @media (min-width: $tableWidth) {
+      margin: 0;
+      text-align: left;
+      width: 33.33%;
+    }
+  }
+
+  &__privacy-policy {
+    margin: 16px 0;
+    text-align: center;
+
+    @media (min-width: $tableWidth) {
+      margin: 0;
+      width: 33.33%;
+    }
+  }
+
+  &__disclaimer {
+    margin: 16px 0;
+    text-align: center;
+
+    @media (min-width: $tableWidth) {
+      margin: 0;
+      width: 33.33%;
+      text-align: right;
+    }
+  }
+}
