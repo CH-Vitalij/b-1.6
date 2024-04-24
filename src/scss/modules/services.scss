@@ -82,5 +82,9 @@
 
   &__price-info {
     padding: 0 16px;
+
+    @media (min-width: $tableWidth) {
+      padding: 0 24px;
+    }
   }
 }
