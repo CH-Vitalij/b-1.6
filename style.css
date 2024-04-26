@@ -1141,7 +1141,7 @@ template {
   flex-direction: column;
   position: fixed;
   width: 100%;
-  min-height: 100vh;
+  height: 100vh;
   box-shadow: 16px 0px 52px 0px #0e185033, -2px 0px 4px 0px #454f7e05;
   background-color: #ffffff;
   overflow-y: auto;
