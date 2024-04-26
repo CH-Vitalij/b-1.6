@@ -20,6 +20,11 @@
     flex: 1 1 auto;
   }
 
+  &__search {
+    background-image: url('../img/search.png');
+    background-size: cover;
+  }
+
   &__call {
     padding: 0;
     background-image: url('../img/call.png');

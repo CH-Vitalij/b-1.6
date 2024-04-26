@@ -1,0 +1,44 @@
+.contacts {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 196px;
+
+  &__call {
+    background-image: url('../img/call.png');
+    background-size: cover;
+  }
+
+  &__chat {
+    background-image: url('../img/chat.png');
+    background-size: cover;
+  }
+
+  &__profile {
+    background-image: url('../img/profile.png');
+    background-size: cover;
+  }
+
+  &__email {
+    flex-basis: 106px;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.20000000298023224px;
+    text-align: left;
+    color: #1b1c21;
+    text-decoration: none;
+    margin-top: 16px;
+    margin-bottom: 12px;
+  }
+
+  &__tel {
+    font-family: 'TT Lakes Bold', sans-serif;
+    flex-basis: 196px;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.6000000238418579px;
+    text-align: left;
+    color: #1b1c21;
+    text-decoration: none;
+    font-weight: 800;
+  }
+}
