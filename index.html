@@ -8,21 +8,77 @@
   <link href="style.css" rel="stylesheet"></head>
   <body class="page">
     <div class="container">
-      
+      <div class="body__side-menu side-menu">
+        <div class="side-menu__background-blurred side-menu_unactive"></div>
+        <div class="side-menu__content side-menu_unactive">
+          <header class="side-menu__header header">
+            <div class="header__upper-menu upper-menu">
+              <button class="upper-menu__btn btn btn_icon_closed"><img src="./img/closed.png" alt=""></button>
+              <div class="upper-menu__logo">
+                <img src="./img/Group.png" alt="Логотип" width="97" height="51">
+              </div>
+              <button class="upper-menu__btn btn"><img src="./img/search.png" alt=""></button>
+            </div>
+          </header>
+          <nav class="side-menu__navigation navigation">
+            <ul class="navigation__list">
+              <li class="navigation__item">
+                <a class="navigation__link" href="#">Ремонт техники</a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link" href="#">Услуги и сервисы</a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link" href="#">Корпоративным клиент</a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link" href="#">Продавцам техники</a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link" href="#">Партнерам</a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link" href="#">Производителям</a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link" href="#">Наши сервисные центры</a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link" href="#">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="side-menu__contacts contacts">
+            <button class="contacts__btn btn"><img src="./img/call.png" alt=""></button>
+            <button class="contacts__btn btn"><img src="./img/chat.png" alt=""></button>
+            <button class="contacts__btn btn"><img src="./img/profile.png" alt=""></button>
+            <a href="mailto:mail@cps.com" class="contacts__email">mail@cps.com</a>
+            <br>
+            <a href="tel:+78008908900" class="contacts__tel">8 800 890 8900</a>
+          </div>
+          <div class="side-menu__lang lang">
+            <ul class="lang__list">
+              <li class="lang__item lang__item_color_grey">RU</li>
+              <li class="lang__item">EN</li>
+              <li class="lang__item">CH</li>
+            </ul>
+          </div>
+        </div>
+      </div>
       <div class="wrapper">
         <header class="page__header header header_hidden header_mode_primary">
           <div class="header__upper-menu upper-menu">
-            <button class="upper-menu__burger btn" type="button"></button>
+            <button class="upper-menu__btn btn btn_icon_burger" type="button"><img src="./img/burger.png" alt=""></button>
             <div class="upper-menu__divider upper-menu__divider_hidden upper-menu__divider_visible"></div>
             <div class="upper-menu__logo">
               <img src="./img/Group.png" alt="Логотип" width="96.55" height="50.81">
             </div>
-            <button class="upper-menu__call upper-menu__call_hidden upper-menu__call_visible btn" type="button"></button>
-            <button class="upper-menu__chat upper-menu__chat_hidden upper-menu__chat_visible btn" type="button"></button>
-            <button class="upper-menu__profile upper-menu__profile_hidden upper-menu__profile_visible btn" type="button"></button>
+            <button class="upper-menu__btn btn btn_hidden btn_visible" type="button"><img src="./img/call.png" alt=""></button>
+            <button class="upper-menu__btn btn btn_hidden btn_visible" type="button"><img src="./img/chat.png" alt=""></button>
+            <button class="upper-menu__btn btn btn_hidden btn_visible" type="button"><img src="./img/profile.png" alt=""></button>
             <div class="upper-menu__divider"></div>
-            <button class="upper-menu__repair btn" type="button"></button>
-            <button class="upper-menu__check-status btn" type="button"></button>
+            <button class="upper-menu__btn btn" type="button"><img src="./img/repair.png" alt=""></button>
+            <button class="upper-menu__btn btn" type="button"><img src="./img/check-status.png" alt=""></button>
           </div>
         </header>
         <main class="body">
@@ -30,10 +86,10 @@
             <h1 class="body__title title title_size_lg title_mode_primary">Услуги и сервисы</h1>
             <div class="body__upper-menu upper-menu upper-menu_hidden upper-menu_visible">
               <label>Оставить заявку
-                <button class="upper-menu__repair btn" type="button"></button>
+                <button class="upper-menu__btn btn" type="button"><img src="./img/repair.png" alt=""></button>
               </label>
               <label>Статус ремонта
-                <button class="upper-menu__check-status btn" type="button"></button>
+                <button class="upper-menu__btn btn" type="button"><img src="./img/check-status.png" alt=""></button>
               </label>
             </div>
           </div>
@@ -345,6 +401,7 @@
               <h2 class="header__title title title_size_md title_mode_secondary">ЦЕНЫ НА УСЛУГИ</h2>
             </header>
             <div class="services__swiper swiper swiper_mode_primary">
+              <div class="services__fadecopy"></div>
               <div class="services__wrapper swiper-wrapper">
                 <div class="services__slide swiper-slide">
                   <div class="services__item">
