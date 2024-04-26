@@ -19,26 +19,24 @@
   }
 
   &__email {
-    flex-basis: 106px;
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: -0.20000000298023224px;
+    font-size: $font-size_sm;
+    line-height: $line-height_md;
+    font-weight: 500;
+    letter-spacing: -0.2px;
     text-align: left;
-    color: #1b1c21;
+    color: $color-text;
     text-decoration: none;
     margin-top: 16px;
     margin-bottom: 12px;
   }
 
   &__tel {
-    font-family: 'TT Lakes Bold', sans-serif;
-    flex-basis: 196px;
-    font-size: 24px;
-    line-height: 32px;
-    letter-spacing: -0.6000000238418579px;
+    font-size: $font-size_md;
+    line-height: $line-height_lg;
+    font-weight: bold;
+    letter-spacing: -0.6px;
     text-align: left;
-    color: #1b1c21;
+    color: $color-text;
     text-decoration: none;
-    font-weight: 800;
   }
 }

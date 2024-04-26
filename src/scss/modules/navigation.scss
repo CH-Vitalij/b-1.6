@@ -20,10 +20,11 @@
   &__link {
     display: inline-block;
     max-width: 320px;
-    color: #1b1c21;
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: -0.20000000298023224px;
+    color: $color-text;
+    font-size: $font-size_sm;
+    line-height: $line-height_md;
+    font-weight: 500;
+    letter-spacing: -0.2px;
     text-align: left;
     text-decoration: none;
     transition-duration: 0.6s;
@@ -31,11 +32,25 @@
     outline: none;
   }
 
+  &__link::before {
+    content: '';
+    position: absolute;
+    transform: translate(-16px, -4px);
+    width: 4px;
+    height: 32px;
+    background-color: $color-border_left;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    opacity: 0;
+    transition-duration: 0.6s;
+    transition-property: opacity;
+  }
+
   &__link:hover::before {
     opacity: 1;
   }
 
   &__link:hover {
-    color: #7e7e82;
+    color: $color-grey;
   }
 }

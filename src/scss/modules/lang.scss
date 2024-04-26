@@ -1,6 +1,6 @@
 .lang {
-  font-size: 16px;
-  line-height: 24px;
+  font-size: $font-size_sm;
+  line-height: $line-height_md;
   letter-spacing: -0.2px;
   text-align: left;
 
@@ -17,6 +17,6 @@
   }
   
   &__item_color_grey {
-    color: #7e7e82;
+    color: $color-grey;
   }
 }

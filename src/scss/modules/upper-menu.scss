@@ -16,6 +16,12 @@
     background-size: cover;
   }
 
+  &__closed {
+    padding: 0;
+    background-image: url('../img/closed.png');
+    background-size: cover;
+  }
+
   &__logo {
     flex: 1 1 auto;
   }

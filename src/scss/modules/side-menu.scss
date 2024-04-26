@@ -1,12 +1,13 @@
 .side-menu {
   display: flex;
   width: 100%;
-  min-height: 100vh;
+  height: 100vh;
   flex-direction: column;
-  box-shadow: 16px 0px 52px 0px #0e185033, -2px 0px 4px 0px #454f7e05;
-  position: fixed;
+  box-shadow: 16px 0px 52px 0px $color-shadow_navy-blue,
+    -2px 0px 4px 0px $color_shadow_light-purple;
   z-index: 100;
-  background-color: #ffffff;
+  background-color: $color-default;
+  overflow-y: auto;
 
   &__header {
     margin-bottom: 4px;
@@ -29,17 +30,17 @@
     margin-bottom: 32px;
   }
 
-  // &_unactive {
-  //   position: absolute;
-  //   top: -100%;
-  //   visibility: hidden;
-  //   opacity: 0;
-  // }
+  &_unactive {
+    position: fixed;
+    top: -100%;
+    visibility: hidden;
+    opacity: 0;
+  }
 
-  // &_active {
-  //   position: absolute;
-  //   top: 0;
-  //   visibility: visible;
-  //   opacity: 1;
-  // }
+  &_active {
+    position: fixed;
+    top: 0;
+    visibility: visible;
+    opacity: 1;
+  }
 }
