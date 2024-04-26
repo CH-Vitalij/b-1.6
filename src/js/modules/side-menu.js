@@ -1,12 +1,11 @@
 function sideMenu() {
+  let screenWidth = window.innerWidth
+
   let upperMenuBurger = document.querySelector('.btn_icon_burger')
-  console.log(upperMenuBurger)
 
   let bodySideMenu = document.querySelector('.side-menu__content')
-  console.log(bodySideMenu)
 
   let upperMenuClosed = bodySideMenu.querySelector('.btn_icon_closed')
-  console.log(upperMenuClosed)
 
   let backgroundBlurred = document.querySelector(
     '.side-menu__background-blurred'
@@ -20,6 +19,28 @@ function sideMenu() {
   upperMenuClosed.addEventListener('click', function () {
     bodySideMenu.classList.toggle('side-menu_active')
     backgroundBlurred.classList.toggle('side-menu_active')
+  })
+
+  function handleScreenSize() {
+    if (screenWidth >= 1440) {
+      bodySideMenu.classList.remove('side-menu_unactive')
+      bodySideMenu.classList.add('side-menu_active')
+    } else {
+      bodySideMenu.classList.add('side-menu_unactive')
+      bodySideMenu.classList.remove('side-menu_active')
+    }
+  }
+
+  window.addEventListener('load', function () {
+    let newScreenWidth = window.innerWidth
+    screenWidth = newScreenWidth
+    handleScreenSize()
+  })
+
+  window.addEventListener('resize', function () {
+    let newScreenWidth = window.innerWidth
+    screenWidth = newScreenWidth
+    handleScreenSize()
   })
 }
 

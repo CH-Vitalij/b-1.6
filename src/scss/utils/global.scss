@@ -30,11 +30,15 @@
   display: flex;
   min-height: 100%;
   flex-direction: column;
+
+  @media (min-width: $desktopWidth) {
+    flex: 0 1 1120px;
+  }
 }
 
 .container {
   @media (min-width: $desktopWidth) {
-    max-width: $desktopWidth;
-    margin: 0 auto;
+    display: flex;
+    justify-content: center;
   }
 }

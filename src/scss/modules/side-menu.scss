@@ -1,4 +1,9 @@
 .side-menu {
+  @media (min-width: 1440px) {
+    flex: 0 1 320px;
+    background-color: $color-default;
+  }
+
   &__background-blurred {
     position: absolute;
     width: 100%;
@@ -6,11 +11,16 @@
     background-color: $color-default;
     opacity: 96.05% !important;
     z-index: 50;
+
+    @media (min-width: $desktopWidth) {
+      display: none;
+    }
   }
 
   &__content {
     display: flex;
     flex-direction: column;
+    position: fixed;
     width: 100%;
     height: 100vh;
     box-shadow: 16px 0px 52px 0px $color-shadow_navy-blue,
@@ -21,6 +31,11 @@
 
     @media (min-width: $tableWidth) {
       width: 320px;
+    }
+
+    @media (min-width: $desktopWidth) {
+      box-shadow: none;
+      margin-top: 25px;
     }
   }
 

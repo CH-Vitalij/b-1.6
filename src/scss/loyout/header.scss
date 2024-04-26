@@ -1,8 +1,8 @@
 .header {
   &_hidden {
-    @media (min-width: 992px) {
+    @media (min-width: $desktopWidth) {
       position: absolute;
-      top: -100%;
+      transform: translateY(-150%);
       visibility: hidden;
       opacity: 0;
     }
@@ -36,7 +36,7 @@
       padding: 16px 24px;
     }
 
-    @media (min-width: 992px) {
+    @media (min-width: $desktopWidth) {
       padding: 16px 32px;
     }
   }

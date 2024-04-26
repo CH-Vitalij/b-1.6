@@ -4,10 +4,9 @@
   height: 88px;
   list-style: none;
 
-  @media (min-width: 992px) {
+  @media (min-width: $desktopWidth) {
     height: auto;
     box-shadow: none;
-    background-color: $color-page;
   }
 
   &__btn {
@@ -47,7 +46,7 @@
   }
 
   &_visible {
-    @media (min-width: 992px) {
+    @media (min-width: $desktopWidth) {
       position: static;
       visibility: visible;
       opacity: 1;
