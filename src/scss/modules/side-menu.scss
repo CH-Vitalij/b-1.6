@@ -9,6 +9,10 @@
   background-color: $color-default;
   overflow-y: auto;
 
+  @media (min-width: $tableWidth) {
+    width: 320px;    
+  }
+
   &__header {
     margin-bottom: 4px;
     padding: 0 16px;
@@ -32,14 +36,15 @@
 
   &_unactive {
     position: fixed;
-    top: -100%;
+    transform: translateX(-150%);
     visibility: hidden;
     opacity: 0;
+    transition: 0.6s transform, 0.6s visibility, 0.6s opacity;
   }
 
   &_active {
     position: fixed;
-    top: 0;
+    transform: translateX(0);
     visibility: visible;
     opacity: 1;
   }
