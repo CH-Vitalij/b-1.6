@@ -13,7 +13,7 @@
     );
     z-index: 10;
 
-    @media (min-width: 992px) {
+    @media (min-width: $desktopWidth) {
       display: none;
     }
   }
@@ -27,7 +27,7 @@
     padding: 0;
     margin: 0;
 
-    @media (min-width: 992px) {
+    @media (min-width: $desktopWidth) {
       flex-wrap: wrap;
     }
   }
@@ -54,7 +54,7 @@
     transition-property: box-shadow, background-color;
     transition-timing-function: ease;
 
-    @media (min-width: 992px) {
+    @media (min-width: $desktopWidth) {
       letter-spacing: 0.24px;
     }
 

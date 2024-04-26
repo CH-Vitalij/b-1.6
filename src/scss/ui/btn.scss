@@ -19,7 +19,7 @@
     }
   }
 
-  @media (min-width: 992px) {
+  @media (min-width: $desktopWidth) {
     vertical-align: middle;
   }
 

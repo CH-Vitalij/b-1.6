@@ -3,19 +3,8 @@
   flex-wrap: wrap;
   max-width: 196px;
 
-  &__call {
-    background-image: url('../img/call.png');
-    background-size: cover;
-  }
-
-  &__chat {
-    background-image: url('../img/chat.png');
-    background-size: cover;
-  }
-
-  &__profile {
-    background-image: url('../img/profile.png');
-    background-size: cover;
+  &__btn {
+    padding: 0;
   }
 
   &__email {

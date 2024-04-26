@@ -7,7 +7,7 @@
     column-gap: 48px;
   }
 
-  @media (min-width: 992px) {
+  @media (min-width: $desktopWidth) {
     column-gap: 36px;
   }
 
@@ -22,7 +22,7 @@
       margin-left: 24px;
     }
 
-    @media (min-width: 992px) {
+    @media (min-width: $desktopWidth) {
       flex: 1 1 490px;
       margin-left: 34px;
     }
@@ -61,7 +61,7 @@
       margin-right: 24px;
     }
 
-    @media (min-width: 992px) {
+    @media (min-width: $desktopWidth) {
       flex: 1 1 531.35px;
       margin-right: 28.65px;
     }
