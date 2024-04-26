@@ -28,6 +28,7 @@ function sideMenu() {
     } else {
       bodySideMenu.classList.add('side-menu_unactive')
       bodySideMenu.classList.remove('side-menu_active')
+      backgroundBlurred.classList.remove('side-menu_active')
     }
   }
 
