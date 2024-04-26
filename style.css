@@ -1249,6 +1249,8 @@ template {
   display: flex;
   flex-wrap: wrap;
   max-width: 196px; }
+  .contacts__btn {
+    padding: 0; }
   .contacts__call {
     background-image: url(./static/call.png);
     background-size: cover; }
