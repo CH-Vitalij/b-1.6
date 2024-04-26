@@ -1,22 +1,39 @@
 .side-menu {
-  display: flex;
   width: 100%;
   height: 100vh;
-  flex-direction: column;
-  box-shadow: 16px 0px 52px 0px $color-shadow_navy-blue,
-    -2px 0px 4px 0px $color_shadow_light-purple;
-  z-index: 100;
-  background-color: $color-default;
-  overflow-y: auto;
 
-  @media (min-width: $tableWidth) {
-    width: 320px;    
+  &__background-blurred {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: $color-default;
+    opacity: 96.05% !important;
+    z-index: 50;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 16px 0px 52px 0px $color-shadow_navy-blue,
+      -2px 0px 4px 0px $color_shadow_light-purple;
+    background-color: $color-default;
+    overflow-y: auto;
+    z-index: 100;
+
+    @media (min-width: $tableWidth) {
+      width: 320px;
+    }
   }
 
   &__header {
     margin-bottom: 4px;
     padding: 0 16px;
     column-gap: 16px;
+
+    @media (min-width: $tableWidth) {
+      margin-bottom: 28px;
+      padding: 0 24px;
+    }
   }
 
   &__navigation {
@@ -27,11 +44,20 @@
     margin-left: 16px;
     margin-bottom: 8px;
     column-gap: 16px;
+
+    @media (min-width: $tableWidth) {
+      margin-left: 24px;
+      margin-bottom: 40px;
+    }
   }
 
   &__lang {
     margin-left: 16px;
     margin-bottom: 32px;
+
+    @media (min-width: $tableWidth) {
+      margin-left: 24px;
+    }
   }
 
   &_unactive {

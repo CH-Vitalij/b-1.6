@@ -7,10 +7,18 @@
     padding: 0;
     margin-left: 16px;
     list-style: none;
+
+    @media (min-width: $tableWidth) {
+      margin-left: 24px;
+    }  
   }
 
   &__item {
     margin-bottom: 24px;
+
+    @media (min-width: $tableWidth) {
+      margin-bottom: 32px;
+    }  
   }
 
   &__item:last-child {
