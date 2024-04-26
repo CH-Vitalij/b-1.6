@@ -4,6 +4,21 @@
   border-radius: 50%;
   border: none;
 
+  &_hidden {
+    position: absolute;
+    top: -100%;
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  &_visible {
+    @media (min-width: 768px) {
+      position: static;
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+
   @media (min-width: 992px) {
     vertical-align: middle;
   }

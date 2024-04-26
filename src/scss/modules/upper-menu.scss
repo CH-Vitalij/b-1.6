@@ -7,65 +7,21 @@
   @media (min-width: 992px) {
     height: auto;
     box-shadow: none;
-    background-color: #f8f8f8;
+    background-color: $color-page;
   }
 
-  &__burger {
+  &__btn {
     padding: 0;
-    background-image: url('../img/burger.png');
-    background-size: cover;
-  }
-
-  &__closed {
-    padding: 0;
-    background-image: url('../img/closed.png');
-    background-size: cover;
   }
 
   &__logo {
     flex: 1 1 auto;
   }
 
-  &__search {
-    background-image: url('../img/search.png');
-    background-size: cover;
-  }
-
-  &__call {
-    padding: 0;
-    background-image: url('../img/call.png');
-    background-size: cover;
-  }
-
-  &__chat {
-    padding: 0;
-    background-image: url('../img/chat.png');
-    background-size: cover;
-  }
-
-  &__profile {
-    padding: 0;
-    background-image: url('../img/profile.png');
-    background-size: cover;
-  }
-
   &__divider {
     width: 2px;
     height: 32px;
     background-image: url('../img/divider.png');
-    background-size: cover;
-  }
-
-  &__repair {
-    padding: 0;
-    background-image: url('../img/repair.png');
-    background-size: cover;
-  }
-
-  &__check-status {
-    padding: 0;
-    background-image: url('../img/check-status.png');
-    background-size: cover;
   }
 
   &__divider_hidden {
@@ -76,51 +32,6 @@
   }
 
   &__divider_visible {
-    @media (min-width: 768px) {
-      position: static;
-      visibility: visible;
-      opacity: 1;
-    }
-  }
-
-  &__call_hidden {
-    position: absolute;
-    top: -100%;
-    visibility: hidden;
-    opacity: 0;
-  }
-
-  &__call_visible {
-    @media (min-width: 768px) {
-      position: static;
-      visibility: visible;
-      opacity: 1;
-    }
-  }
-
-  &__chat_hidden {
-    position: absolute;
-    top: -100%;
-    visibility: hidden;
-    opacity: 0;
-  }
-
-  &__chat_visible {
-    @media (min-width: 768px) {
-      position: static;
-      visibility: visible;
-      opacity: 1;
-    }
-  }
-
-  &__profile_hidden {
-    position: absolute;
-    top: -100%;
-    visibility: hidden;
-    opacity: 0;
-  }
-
-  &__profile_visible {
     @media (min-width: 768px) {
       position: static;
       visibility: visible;

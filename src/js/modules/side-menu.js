@@ -1,11 +1,11 @@
 function sideMenu() {
-  let upperMenuBurger = document.querySelector('.upper-menu__burger')
+  let upperMenuBurger = document.querySelector('.btn_icon_burger')
   console.log(upperMenuBurger)
 
   let bodySideMenu = document.querySelector('.side-menu__content')
   console.log(bodySideMenu)
 
-  let upperMenuClosed = bodySideMenu.querySelector('.upper-menu__closed')
+  let upperMenuClosed = bodySideMenu.querySelector('.btn_icon_closed')
   console.log(upperMenuClosed)
 
   let backgroundBlurred = document.querySelector(
