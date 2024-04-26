@@ -1,5 +1,7 @@
 function sideMenu() {
   let screenWidth = window.innerWidth
+  let isClicked = false
+  let clickCount = 0
 
   let upperMenuBurger = document.querySelector('.btn_icon_burger')
 
@@ -11,24 +13,35 @@ function sideMenu() {
     '.side-menu__background-blurred'
   )
 
-  upperMenuBurger.addEventListener('click', function () {
-    bodySideMenu.classList.toggle('side-menu_active')
-    backgroundBlurred.classList.toggle('side-menu_active')
-  })
+  let arr = [upperMenuBurger, upperMenuClosed, backgroundBlurred]
 
-  upperMenuClosed.addEventListener('click', function () {
-    bodySideMenu.classList.toggle('side-menu_active')
-    backgroundBlurred.classList.toggle('side-menu_active')
-  })
+  let toggleSideMenu = function (arg) {
+    arg.addEventListener('click', function () {
+      clickCount++
+      if (clickCount % 2 === 0) {
+        isClicked = false
+      } else {
+        isClicked = true
+      }
+      bodySideMenu.classList.toggle('side-menu_active')
+      backgroundBlurred.classList.toggle('side-menu_active')
+    })
+  }
+
+  for (let i = 0; i < arr.length; i++) {
+    toggleSideMenu(arr[i])
+  }
 
   function handleScreenSize() {
-    if (screenWidth >= 1440) {
-      bodySideMenu.classList.remove('side-menu_unactive')
-      bodySideMenu.classList.add('side-menu_active')
-    } else {
-      bodySideMenu.classList.add('side-menu_unactive')
-      bodySideMenu.classList.remove('side-menu_active')
-      backgroundBlurred.classList.remove('side-menu_active')
+    if (!isClicked) {
+      if (screenWidth >= 1440) {
+        bodySideMenu.classList.remove('side-menu_unactive')
+        bodySideMenu.classList.add('side-menu_active')
+      } else {
+        bodySideMenu.classList.add('side-menu_unactive')
+        bodySideMenu.classList.remove('side-menu_active')
+        backgroundBlurred.classList.remove('side-menu_active')
+      }
     }
   }
 
