@@ -28,10 +28,14 @@
       16px 0px 52px 0px $color-shadow_navy-blue,
       -2px 0px 4px 0px $color_shadow_light-purple;
     background-color: $color-default;
-    width: 320px;
+    width: 100%;
     letter-spacing: -0.6px;
     text-align: left;
     height: 100vh;
+
+    @media (min-width: $tableWidth) {
+      width: 320px;
+    }
 
     @media (min-width: $desktopWidth) {
       width: 440px;
