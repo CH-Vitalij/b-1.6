@@ -57,11 +57,11 @@
     }
   }
 
-  &__link:hover::before {
+  &__link:hover::before, &__link:focus::before {
     opacity: 1;
   }
 
-  &__link:hover {
+  &__link:hover, &__link:focus {
     color: $color-grey;
   }
 }

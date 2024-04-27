@@ -11,12 +11,20 @@
 
   &__btn {
     padding: 0;
+    transition: 0.2s box-shadow;
 
     &_closed {
       @media (min-width: $desktopWidth) {
         display: none;
       }
     }
+  }
+
+  &__btn:hover,
+  &__btn:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px $color-shadow_actions_translucent,
+      0 0 10px 2px $color-shadow_actions;
   }
 
   &__logo {

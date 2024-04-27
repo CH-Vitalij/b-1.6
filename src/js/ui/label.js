@@ -1,13 +1,13 @@
 function label() {
-  var readMore = document.querySelectorAll('.read-more')
-  var label = document.querySelectorAll('.label')
-  var labelSpan = []
-  var labelImg = []
-  var aboutExcerpt = document.querySelector('.about__excerpt')
-  var collapseRows = document.querySelectorAll('.collapse__row')
-  var arr = [aboutExcerpt]
+  let readMore = document.querySelectorAll('.read-more')
+  let label = document.querySelectorAll('.label')
+  let labelSpan = []
+  let labelImg = []
+  let aboutExcerpt = document.querySelector('.about__excerpt')
+  let collapseRows = document.querySelectorAll('.collapse__row')
+  let arr = [aboutExcerpt]
 
-  var toggleElementBehavior = function (readMore, labelSpan, labelImg, arr) {
+  let toggleElementBehavior = function (readMore, labelSpan, labelImg, arr) {
     readMore.addEventListener('change', function () {
       if (readMore.checked) {
         labelImg.style.transform = 'rotate(180deg)'

@@ -45,11 +45,19 @@
     margin-top: 24px;
     margin-left: 16px;
     margin-bottom: 40px;
+    transition: 0.2s box-shadow;
 
     @media (min-width: $desktopWidth) {
       position: absolute;
       transform: translate(-90px, -30px);
     }
+  }
+
+  &__btn:hover,
+  &__btn:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px $color-shadow_actions_translucent,
+      0 0 10px 2px $color-shadow_actions;
   }
 
   &__title {
