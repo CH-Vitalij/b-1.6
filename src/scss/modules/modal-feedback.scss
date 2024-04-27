@@ -21,13 +21,19 @@
   &__content {
     position: fixed;
     z-index: 200;
-    box-shadow: 16px 0px 52px 0px $color-shadow_navy-blue,
+    box-shadow: inset 1px 0 0 0 #d9fff5,
+      16px 0px 52px 0px $color-shadow_navy-blue,
       -2px 0px 4px 0px $color_shadow_light-purple;
     background-color: $color-default;
     width: 320px;
     letter-spacing: -0.6px;
     text-align: left;
     height: 100vh;
+
+    @media (min-width: $desktopWidth) {
+      width: 440px;
+      padding-top: 40px;
+    }
   }
 
   &__btn {
@@ -36,6 +42,11 @@
     margin-top: 24px;
     margin-left: 16px;
     margin-bottom: 40px;
+
+    @media (min-width: $desktopWidth) {
+      position: absolute;
+      transform: translate(-90px, -30px);
+    }
   }
 
   &__title {
@@ -47,12 +58,17 @@
   &__title::before {
     content: '';
     position: absolute;
-    transform: translate(-16px, -2px);
+    transform: translate(-16px, -4px);
     width: 4px;
-    height: 32px;
+    height: 40px;
     background-color: $color-border_left;
     border-top-right-radius: 6px;
     border-bottom-right-radius: 6px;
+
+    @media (min-width: $desktopWidth) {
+      width: 3px;
+      transform: translate(-31px, -4px);
+    }
   }
 
   &_unactive {
