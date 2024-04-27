@@ -2,7 +2,6 @@
   flex: 1 1 auto;
 
   &__list {
-    position: relative;
     margin: 0;
     padding: 0;
     margin-left: 16px;
@@ -10,7 +9,7 @@
 
     @media (min-width: $tableWidth) {
       margin-left: 24px;
-    }  
+    }
   }
 
   &__item {
@@ -18,7 +17,7 @@
 
     @media (min-width: $tableWidth) {
       margin-bottom: 32px;
-    }  
+    }
   }
 
   &__item:last-child {
@@ -52,6 +51,10 @@
     opacity: 0;
     transition-duration: 0.6s;
     transition-property: opacity;
+
+    @media (min-width: $tableWidth) {
+      transform: translate(-24px, -4px);
+    }
   }
 
   &__link:hover::before {

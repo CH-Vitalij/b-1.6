@@ -1,6 +1,11 @@
 .title {
   text-align: left;
 
+  &_size_xl {
+    font-size: $font-size_md;
+    line-height: $line-height_lg;
+  }
+
   &_size_lg {
     font-size: $font-size_lg;
     line-height: $line-height_xl;

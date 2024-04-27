@@ -1,0 +1,21 @@
+.modal-feedback {
+  position: fixed;
+  z-index: 100;
+  background-color: $color-default;
+  width: 100%;
+  letter-spacing: -0.6px;
+  text-align: left;
+  height: 100vh;
+
+  &__title {
+    margin: 0;
+    margin-bottom: 24px;
+    padding-left: 12px;
+    max-width: 288px;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: $color-pink;
+  }
+}
