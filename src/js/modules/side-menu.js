@@ -3,11 +3,11 @@ function sideMenu() {
   let isClicked = false
   let clickCount = 0
 
-  let upperMenuBurger = document.querySelector('.btn_icon_burger')
+  let upperMenuBurger = document.querySelector('.upper-menu__btn_burger')
 
   let bodySideMenu = document.querySelector('.side-menu__content')
 
-  let upperMenuClosed = bodySideMenu.querySelector('.btn_icon_closed')
+  let upperMenuClosed = bodySideMenu.querySelector('.upper-menu__btn_closed')
 
   let backgroundBlurred = document.querySelector(
     '.side-menu__background-blurred'
@@ -24,7 +24,7 @@ function sideMenu() {
         isClicked = true
       }
       bodySideMenu.classList.toggle('side-menu_active')
-      backgroundBlurred.classList.toggle('side-menu_active')
+      backgroundBlurred.classList.toggle('side-menu_visible')
     })
   }
 

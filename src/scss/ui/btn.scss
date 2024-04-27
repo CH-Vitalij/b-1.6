@@ -22,10 +22,4 @@
   @media (min-width: $desktopWidth) {
     vertical-align: middle;
   }
-
-  &_icon_closed {
-    @media (min-width: $desktopWidth) {
-      display: none;      
-    }
-  }
 }

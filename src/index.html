@@ -12,11 +12,11 @@
   <body class="page">
     <div class="container">
       <div class="side-menu">
-        <div class="side-menu__background-blurred side-menu_unactive"></div>
+        <div class="side-menu__background-blurred side-menu_hidden"></div>
         <div class="side-menu__content side-menu_unactive">
           <header class="side-menu__header header">
             <div class="header__upper-menu upper-menu">
-              <button class="upper-menu__btn btn btn_icon_closed"
+              <button class="upper-menu__btn upper-menu__btn_closed btn"
                 ><img src="./img/closed.png" alt=""
               /></button>
               <div class="upper-menu__logo">
@@ -64,7 +64,7 @@
             <button class="contacts__btn btn"
               ><img src="./img/call.png" alt=""
             /></button>
-            <button class="contacts__btn btn"
+            <button class="contacts__btn contacts__btn_chat btn"
               ><img src="./img/chat.png" alt=""
             /></button>
             <button class="contacts__btn btn"
@@ -86,31 +86,64 @@
         </div>
       </div>
       <div class="modal-feedback">
-        <h1 class="modal-feedback__title title title_size_xl title_mode_primary"
-          >Обратная связь</h1
+        <div
+          class="modal-feedback__background-blurred modal-feedback_hidden"
+        ></div>
+        <div
+          class="modal-feedback__content modal-feedback_unactive"
         >
-        <form class="modal-feedback__form form" action="" method="post">
-          <input type="text" name="userName" placeholder="Имя" />
-          <input type="text" name="userPhone" placeholder="Телефон" />
-          <input type="text" name="userEmail" placeholder="Электронная почта" />
-          <textarea name="" id="" cols="30" rows="10" placeholder="Сообщение"></textarea>
-          <p class="modal-feedback__consent-block"
-            >Нажимая “отправить”, вы даете согласие на
-            <a href="" class="modal-feedback__link"
-              >обработку персональных данных</a
-            >
-            и соглашаетесь с нашей
-            <a href="" class="modal-feedback__link"
-              >политикой конфиденциальности</a
-            ></p
-          >
-          <input type="submit" value="Отправить" />
-        </form>
+          <button class="modal-feedback__btn modal-feedback__btn_closed btn"
+            ><img src="./img/closed.png" alt=""
+          /></button>
+          <form class="modal-feedback__form form" action="" method="post">
+            <fieldset class="form__fieldset">
+              <legend
+                class="modal-feedback__title title title_size_xl title_mode_legend"
+                >Обратная связь</legend
+              >
+              <input
+                class="form__input"
+                type="text"
+                name="userName"
+                placeholder="Имя"
+              />
+              <input
+                class="form__input"
+                type="text"
+                name="userPhone"
+                placeholder="Телефон"
+              />
+              <input
+                class="form__input"
+                type="text"
+                name="userEmail"
+                placeholder="Электронная почта"
+              />
+              <textarea
+                class="form__textarea"
+                name="userMessage"
+                placeholder="Сообщение"
+              ></textarea>
+              <p class="form__consent-block"
+                >Нажимая “отправить”, вы даете согласие на
+                <a href="#" class="form__link">обработку персональных данных</a>
+                и соглашаетесь с нашей
+                <a href="#" class="form__link"
+                  >политикой конфиденциальности</a
+                ></p
+              >
+              <input class="form__btn btn" type="submit" value="ОТПРАВИТЬ" />
+              <span class="form__arrow"></span>
+            </fieldset>
+          </form>
+        </div>
       </div>
       <div class="wrapper">
         <header class="page__header header header_hidden header_mode_primary">
           <div class="header__upper-menu upper-menu">
-            <button class="upper-menu__btn btn btn_icon_burger" type="button"
+            <button
+              class="upper-menu__btn upper-menu__btn_burger btn"
+              type="button"
               ><img src="./img/burger.png" alt=""
             /></button>
             <div
@@ -130,7 +163,7 @@
               ><img src="./img/call.png" alt=""
             /></button>
             <button
-              class="upper-menu__btn btn btn_hidden btn_visible"
+              class="upper-menu__btn upper-menu__btn_chat btn btn_hidden btn_visible"
               type="button"
               ><img src="./img/chat.png" alt=""
             /></button>

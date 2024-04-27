@@ -1,21 +1,74 @@
 .modal-feedback {
-  position: fixed;
-  z-index: 100;
-  background-color: $color-default;
-  width: 100%;
-  letter-spacing: -0.6px;
-  text-align: left;
-  height: 100vh;
+  &__background-blurred {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: $color-default;
+    z-index: 150;
+  }
+
+  &_hidden {
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.6s transform, 0.6s visibility, 0.6s opacity;
+  }
+
+  &_visible {
+    visibility: visible;
+    opacity: 96.05%;
+  }
+
+  &__content {
+    position: fixed;
+    z-index: 200;
+    box-shadow: 16px 0px 52px 0px $color-shadow_navy-blue,
+      -2px 0px 4px 0px $color_shadow_light-purple;
+    background-color: $color-default;
+    width: 320px;
+    letter-spacing: -0.6px;
+    text-align: left;
+    height: 100vh;
+  }
+
+  &__btn {
+    padding: 0;
+    margin: 0;
+    margin-top: 24px;
+    margin-left: 16px;
+    margin-bottom: 40px;
+  }
 
   &__title {
     margin: 0;
     margin-bottom: 24px;
-    padding-left: 12px;
     max-width: 288px;
   }
 
-  &__link {
-    text-decoration: none;
-    color: $color-pink;
+  &__title::before {
+    content: '';
+    position: absolute;
+    transform: translate(-16px, -2px);
+    width: 4px;
+    height: 32px;
+    background-color: $color-border_left;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+  }
+
+  &_unactive {
+    position: fixed;
+    right: 0;
+    transform: translateX(250%);
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.6s transform, 0.6s visibility, 0.6s opacity;
+  }
+
+  &_active {
+    position: fixed;
+    right: 0;
+    transform: translateX(0%);
+    visibility: visible;
+    opacity: 1;
   }
 }

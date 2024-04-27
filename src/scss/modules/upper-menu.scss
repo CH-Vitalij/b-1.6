@@ -11,6 +11,12 @@
 
   &__btn {
     padding: 0;
+
+    &_closed {
+      @media (min-width: $desktopWidth) {
+        display: none;
+      }
+    }
   }
 
   &__logo {
