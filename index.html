@@ -8,12 +8,12 @@
   <link href="style.css" rel="stylesheet"></head>
   <body class="page">
     <div class="container">
-      <div class="body__side-menu side-menu">
-        <div class="side-menu__background-blurred side-menu_unactive"></div>
+      <div class="side-menu">
+        <div class="side-menu__background-blurred side-menu_hidden"></div>
         <div class="side-menu__content side-menu_unactive">
           <header class="side-menu__header header">
             <div class="header__upper-menu upper-menu">
-              <button class="upper-menu__btn btn btn_icon_closed"><img src="./img/closed.png" alt=""></button>
+              <button class="upper-menu__btn upper-menu__btn_closed btn"><img src="./img/closed.png" alt=""></button>
               <div class="upper-menu__logo">
                 <img src="./img/Group.png" alt="Логотип" width="97" height="51">
               </div>
@@ -49,8 +49,8 @@
             </ul>
           </nav>
           <div class="side-menu__contacts contacts">
-            <button class="contacts__btn btn"><img src="./img/call.png" alt=""></button>
-            <button class="contacts__btn btn"><img src="./img/chat.png" alt=""></button>
+            <button class="contacts__btn contacts__btn_call btn"><img src="./img/call.png" alt=""></button>
+            <button class="contacts__btn contacts__btn_chat btn"><img src="./img/chat.png" alt=""></button>
             <button class="contacts__btn btn"><img src="./img/profile.png" alt=""></button>
             <a href="mailto:mail@cps.com" class="contacts__email">mail@cps.com</a>
             <br>
@@ -58,23 +58,62 @@
           </div>
           <div class="side-menu__lang lang">
             <ul class="lang__list">
-              <li class="lang__item lang__item_color_grey">RU</li>
+              <li class="lang__item lang__item_active">RU</li>
               <li class="lang__item">EN</li>
               <li class="lang__item">CH</li>
             </ul>
           </div>
         </div>
       </div>
+      <div class="modal-feedback">
+        <div class="modal-feedback__background-blurred modal-feedback_hidden"></div>
+        <div class="modal-feedback__content modal-feedback_unactive">
+          <button class="modal-feedback__btn modal-feedback__btn_closed btn"><img src="./img/closed.png" alt=""></button>
+          <form class="modal-feedback__form form" action="" method="post">
+            <fieldset class="form__fieldset">
+              <legend class="modal-feedback__title title title_size_xl title_mode_legend">Обратная связь</legend>
+              <input class="form__input" type="text" name="userName" placeholder="Имя">
+              <input class="form__input" type="text" name="userPhone" placeholder="Телефон">
+              <input class="form__input" type="text" name="userEmail" placeholder="Электронная почта">
+              <textarea class="form__textarea" name="userMessage" placeholder="Сообщение"></textarea>
+              <p class="form__consent-block">Нажимая “отправить”, вы даете согласие на
+                <a href="#" class="form__link">обработку персональных данных</a>
+                и соглашаетесь с нашей
+                <a href="#" class="form__link">политикой конфиденциальности</a></p>
+              <input class="form__btn btn" type="submit" value="ОТПРАВИТЬ">
+              <span class="form__arrow"></span>
+            </fieldset>
+          </form>
+        </div>
+      </div>
+      <div class="modal-call">
+        <div class="modal-call__background-blurred modal-call_hidden"></div>
+        <div class="modal-call__content modal-call_unactive">
+          <button class="modal-call__btn modal-call__btn_closed btn"><img src="./img/closed.png" alt=""></button>
+          <form class="modal-call__form form" action="" method="post">
+            <fieldset class="form__fieldset">
+              <legend class="modal-call__title title title_size_xl title_mode_legend">Заказать звонок</legend>
+              <input class="form__input" type="text" name="userPhone" placeholder="Телефон">
+              <p class="form__consent-block">Нажимая “отправить”, вы даете согласие на
+                <a href="#" class="form__link">обработку персональных данных</a>
+                и соглашаетесь с нашей
+                <a href="#" class="form__link">политикой конфиденциальности</a></p>
+              <input class="form__btn btn" type="submit" value="ОТПРАВИТЬ">
+              <span class="form__arrow"></span>
+            </fieldset>
+          </form>
+        </div>
+      </div>
       <div class="wrapper">
         <header class="page__header header header_hidden header_mode_primary">
           <div class="header__upper-menu upper-menu">
-            <button class="upper-menu__btn btn btn_icon_burger" type="button"><img src="./img/burger.png" alt=""></button>
+            <button class="upper-menu__btn upper-menu__btn_burger btn" type="button"><img src="./img/burger.png" alt=""></button>
             <div class="upper-menu__divider upper-menu__divider_hidden upper-menu__divider_visible"></div>
             <div class="upper-menu__logo">
               <img src="./img/Group.png" alt="Логотип" width="96.55" height="50.81">
             </div>
-            <button class="upper-menu__btn btn btn_hidden btn_visible" type="button"><img src="./img/call.png" alt=""></button>
-            <button class="upper-menu__btn btn btn_hidden btn_visible" type="button"><img src="./img/chat.png" alt=""></button>
+            <button class="upper-menu__btn upper-menu__btn_call btn btn_hidden btn_visible" type="button"><img src="./img/call.png" alt=""></button>
+            <button class="upper-menu__btn upper-menu__btn_chat btn btn_hidden btn_visible" type="button"><img src="./img/chat.png" alt=""></button>
             <button class="upper-menu__btn btn btn_hidden btn_visible" type="button"><img src="./img/profile.png" alt=""></button>
             <div class="upper-menu__divider"></div>
             <button class="upper-menu__btn btn" type="button"><img src="./img/repair.png" alt=""></button>
