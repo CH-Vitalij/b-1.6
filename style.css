@@ -1430,10 +1430,13 @@ template {
     z-index: 200;
     box-shadow: inset 1px 0 0 0 #d9fff5, 16px 0px 52px 0px #0e185033, -2px 0px 4px 0px #454f7e05;
     background-color: #ffffff;
-    width: 320px;
+    width: 100%;
     letter-spacing: -0.6px;
     text-align: left;
     height: 100vh; }
+    @media (min-width: 768px) {
+      .modal-feedback__content {
+        width: 320px; } }
     @media (min-width: 1440px) {
       .modal-feedback__content {
         width: 440px;
@@ -1504,10 +1507,13 @@ template {
     z-index: 200;
     box-shadow: inset 1px 0 0 0 #d9fff5, 16px 0px 52px 0px #0e185033, -2px 0px 4px 0px #454f7e05;
     background-color: #ffffff;
-    width: 320px;
+    width: 100%;
     letter-spacing: -0.6px;
     text-align: left;
     height: 100vh; }
+    @media (min-width: 768px) {
+      .modal-call__content {
+        width: 320px; } }
     @media (min-width: 1440px) {
       .modal-call__content {
         width: 440px;
