@@ -640,6 +640,7 @@ template {
   letter-spacing: -0.2px;
   text-align: left; }
   .form__fieldset {
+    position: relative;
     padding: 0;
     margin: 0;
     border: none;
@@ -699,9 +700,10 @@ template {
     text-align: left;
     color: #7e7e82; }
   .form__btn {
+    position: absolute;
     margin-left: 152px;
-    right: 16px;
-    bottom: 75px;
+    right: 2px;
+    bottom: -32px;
     width: 136px;
     height: 32px;
     background-color: #ff3e79;
@@ -714,6 +716,9 @@ template {
     font-size: 12px;
     line-height: 24px;
     letter-spacing: -0.15px; }
+    @media (min-width: 768px) {
+      .form__btn {
+        position: static; } }
   .form__arrow {
     content: '';
     position: absolute;
