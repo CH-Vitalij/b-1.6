@@ -588,7 +588,8 @@ template {
   .lang__item_active {
     color: #7e7e82; }
   .lang__item:hover {
-    color: #7e7e82; }
+    color: #7e7e82;
+    cursor: pointer; }
 
 .swiper.swiper_mode_primary {
   width: 100%; }
