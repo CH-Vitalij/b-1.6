@@ -61,7 +61,7 @@
             </ul>
           </nav>
           <div class="side-menu__contacts contacts">
-            <button class="contacts__btn btn"
+            <button class="contacts__btn contacts__btn_call btn"
               ><img src="./img/call.png" alt=""
             /></button>
             <button class="contacts__btn contacts__btn_chat btn"
@@ -138,6 +138,42 @@
           </form>
         </div>
       </div>
+      <div class="modal-call">
+        <div
+          class="modal-call__background-blurred modal-call_hidden"
+        ></div>
+        <div
+          class="modal-call__content modal-call_unactive"
+        >
+          <button class="modal-call__btn modal-call__btn_closed btn"
+            ><img src="./img/closed.png" alt=""
+          /></button>
+          <form class="modal-call__form form" action="" method="post">
+            <fieldset class="form__fieldset">
+              <legend
+                class="modal-call__title title title_size_xl title_mode_legend"
+                >Заказать звонок</legend
+              >
+              <input
+                class="form__input"
+                type="text"
+                name="userPhone"
+                placeholder="Телефон"
+              />
+              <p class="form__consent-block"
+                >Нажимая “отправить”, вы даете согласие на
+                <a href="#" class="form__link">обработку персональных данных</a>
+                и соглашаетесь с нашей
+                <a href="#" class="form__link"
+                  >политикой конфиденциальности</a
+                ></p
+              >
+              <input class="form__btn btn" type="submit" value="ОТПРАВИТЬ" />
+              <span class="form__arrow"></span>
+            </fieldset>
+          </form>
+        </div>
+      </div>
       <div class="wrapper">
         <header class="page__header header header_hidden header_mode_primary">
           <div class="header__upper-menu upper-menu">
@@ -158,7 +194,7 @@
               />
             </div>
             <button
-              class="upper-menu__btn btn btn_hidden btn_visible"
+              class="upper-menu__btn upper-menu__btn_call btn btn_hidden btn_visible"
               type="button"
               ><img src="./img/call.png" alt=""
             /></button>

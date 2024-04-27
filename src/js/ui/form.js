@@ -1,8 +1,10 @@
 function form() {
-  var modalFeedbackForm = document.querySelector('.form')
+  let modalFeedbackForms = document.querySelectorAll('.form')
 
-  modalFeedbackForm.addEventListener('submit', function (evt) {
-    evt.preventDefault()
+  modalFeedbackForms.forEach(function (el) {
+    el.addEventListener('submit', function (evt) {
+      evt.preventDefault()
+    })
   })
 }
 

@@ -28,9 +28,9 @@ function sideMenu() {
     })
   }
 
-  for (let i = 0; i < arr.length; i++) {
-    toggleSideMenu(arr[i])
-  }
+  arr.forEach(function(element) {
+    toggleSideMenu(element);
+  });
 
   function handleScreenSize() {
     if (!isClicked) {
