@@ -59,9 +59,7 @@
 
   &__btn:hover,
   &__btn:focus {
-    outline: none;
-    box-shadow: 0 0 0 2px $color-shadow_actions_translucent,
-      0 0 10px 2px $color-shadow_actions;
+    transform: scale(1.1, 1.1);
   }
 
   &__title {
