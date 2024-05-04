@@ -18,7 +18,7 @@ function modalFeedback() {
   let toggleModalFeedback = function (arg) {
     arg.addEventListener('click', function () {
       bodyModelFeedback.classList.toggle('modal-feedback_active')
-      backgroundBlurred.classList.toggle('modal-feedback_visible')
+      backgroundBlurred.classList.toggle('modal-feedback__background-blurred_visible')
     })
   }
 

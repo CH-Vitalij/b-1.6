@@ -23,24 +23,26 @@ function sideMenu() {
       } else {
         isClicked = true
       }
-      bodySideMenu.classList.toggle('side-menu_active')
-      backgroundBlurred.classList.toggle('side-menu_visible')
+      bodySideMenu.classList.toggle('side-menu_unactive')
+      backgroundBlurred.classList.toggle(
+        'side-menu__background-blurred_visible'
+      )
     })
   }
 
-  arr.forEach(function(element) {
-    toggleSideMenu(element);
-  });
+  arr.forEach(function (element) {
+    toggleSideMenu(element)
+  })
 
   function handleScreenSize() {
     if (!isClicked) {
       if (screenWidth >= 1440) {
         bodySideMenu.classList.remove('side-menu_unactive')
-        bodySideMenu.classList.add('side-menu_active')
       } else {
         bodySideMenu.classList.add('side-menu_unactive')
-        bodySideMenu.classList.remove('side-menu_active')
-        backgroundBlurred.classList.remove('side-menu_active')
+        backgroundBlurred.classList.remove(
+          'side-menu__background-blurred_visible'
+        )
       }
     }
   }

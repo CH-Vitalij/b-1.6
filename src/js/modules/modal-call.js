@@ -16,7 +16,7 @@ function modalCall() {
   let toggleModalCall = function (arg) {
     arg.addEventListener('click', function () {
       bodyModelCall.classList.toggle('modal-call_active')
-      backgroundBlurred.classList.toggle('modal-call_visible')
+      backgroundBlurred.classList.toggle('modal-call__background-blurred_visible')
     })
   }
 
