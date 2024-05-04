@@ -1258,18 +1258,16 @@ template {
   background-color: #ffffff;
   opacity: 96.05%;
   z-index: 50; }
+  .side-menu__background-blurred_hidden {
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.6s transform, 0.6s opacity; }
+  .side-menu__background-blurred_visible {
+    visibility: visible;
+    opacity: 96.05%; }
   @media (min-width: 1440px) {
     .side-menu__background-blurred {
       display: none; } }
-
-.side-menu_hidden {
-  opacity: 0;
-  visibility: hidden;
-  transition: 0.6s transform, 0.6s opacity; }
-
-.side-menu_visible {
-  visibility: visible;
-  opacity: 96.05%; }
 
 .side-menu__content {
   display: flex;
@@ -1280,7 +1278,8 @@ template {
   box-shadow: 16px 0px 52px 0px #0e185033, -2px 0px 4px 0px #454f7e05;
   background-color: #ffffff;
   overflow-y: auto;
-  z-index: 100; }
+  z-index: 100;
+  transition: 0.6s transform, 0.6s visibility, 0.6s opacity; }
   @media (min-width: 768px) {
     .side-menu__content {
       width: 320px; } }
@@ -1323,14 +1322,7 @@ template {
   position: fixed;
   transform: translateX(-150%);
   visibility: hidden;
-  opacity: 0;
-  transition: 0.6s transform, 0.6s visibility, 0.6s opacity; }
-
-.side-menu_active {
-  position: fixed;
-  transform: translateX(0);
-  visibility: visible;
-  opacity: 1; }
+  opacity: 0; }
 
 .navigation {
   flex: 1 1 auto; }
@@ -1420,13 +1412,13 @@ template {
     height: 100vh;
     background-color: #ffffff;
     z-index: 150; }
-  .modal-feedback_hidden {
-    opacity: 0;
-    visibility: hidden;
-    transition: 0.6s transform, 0.6s opacity; }
-  .modal-feedback_visible {
-    visibility: visible;
-    opacity: 96.05%; }
+    .modal-feedback__background-blurred_hidden {
+      opacity: 0;
+      visibility: hidden;
+      transition: 0.6s transform, 0.6s opacity; }
+    .modal-feedback__background-blurred_visible {
+      visibility: visible;
+      opacity: 96.05%; }
   .modal-feedback__content {
     position: fixed;
     z-index: 200;
@@ -1496,13 +1488,13 @@ template {
     height: 100vh;
     background-color: #ffffff;
     z-index: 150; }
-  .modal-call_hidden {
-    opacity: 0;
-    visibility: hidden;
-    transition: 0.6s transform, 0.6s opacity; }
-  .modal-call_visible {
-    visibility: visible;
-    opacity: 96.05%; }
+    .modal-call__background-blurred_hidden {
+      opacity: 0;
+      visibility: hidden;
+      transition: 0.6s transform, 0.6s opacity; }
+    .modal-call__background-blurred_visible {
+      visibility: visible;
+      opacity: 96.05%; }
   .modal-call__content {
     position: fixed;
     z-index: 200;
