@@ -60,6 +60,10 @@
   &__btn:hover,
   &__btn:focus {
     transform: scale(1.1, 1.1);
+
+    @media (min-width: $desktopWidth) {
+      transform: translate(-90px, -30px) scale(1.1, 1.1);
+    }
   }
 
   &__title {
