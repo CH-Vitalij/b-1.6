@@ -1524,6 +1524,9 @@ template {
         transform: translate(-90px, -30px); } }
   .modal-call__btn:hover, .modal-call__btn:focus {
     transform: scale(1.1, 1.1); }
+    @media (min-width: 1440px) {
+      .modal-call__btn:hover, .modal-call__btn:focus {
+        transform: translate(-90px, -30px) scale(1.1, 1.1); } }
   .modal-call__title {
     margin: 0;
     margin-bottom: 24px;
